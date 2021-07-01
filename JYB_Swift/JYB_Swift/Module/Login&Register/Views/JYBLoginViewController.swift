@@ -182,6 +182,10 @@ class JYBLoginViewController: UIViewController {
         }
     }
     
+    private func bindViewModel() {
+        
+    }
+    
     // MARK: Action
     @objc private func tapBack() {
         dismiss(animated: true, completion: nil)

@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = JYBTestViewController()
+        window?.rootViewController = JYBNavigationController.init(rootViewController: JYBLoginViewController())
         window?.makeKeyAndVisible()
         
         AppTheme.manager.setLastedTheme()
