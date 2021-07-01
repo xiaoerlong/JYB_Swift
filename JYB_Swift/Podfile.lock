@@ -1,0 +1,76 @@
+PODS:
+  - Alamofire (5.4.1)
+  - CocoaAsyncSocket (7.6.5)
+  - HandyJSON (5.0.2)
+  - Kingfisher (6.2.1)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - ObjectMapper (4.2.0)
+  - ReactiveCocoa (10.3.0):
+    - ReactiveSwift (~> 6.2)
+  - ReactiveSwift (6.6.0)
+  - RxCocoa (6.0.0-rc.2):
+    - RxRelay (= 6.0.0-rc.2)
+    - RxSwift (= 6.0.0-rc.2)
+  - RxRelay (6.0.0-rc.2):
+    - RxSwift (= 6.0.0-rc.2)
+  - RxSwift (6.0.0-rc.2)
+  - SnapKit (5.0.1)
+  - XMLMapper (2.0.0):
+    - XMLMapper/Core (= 2.0.0)
+  - XMLMapper/Core (2.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket
+  - HandyJSON (~> 5.0.2)
+  - Kingfisher
+  - Moya (~> 14.0)
+  - ObjectMapper
+  - ReactiveCocoa (~> 10.1)
+  - RxCocoa (= 6.0.0-rc.2)
+  - RxSwift (= 6.0.0-rc.2)
+  - SnapKit (~> 5.0.0)
+  - XMLMapper
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Alamofire
+    - CocoaAsyncSocket
+    - HandyJSON
+    - Kingfisher
+    - Moya
+    - ObjectMapper
+    - ReactiveCocoa
+    - ReactiveSwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SnapKit
+    - XMLMapper
+    - YYKit
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  ReactiveCocoa: 083ae559e6f588ce519cab412ea119b431c26a24
+  ReactiveSwift: be9407e2aaf8a11e53a5229255693cffd9a63ccf
+  RxCocoa: 38445a25751be5907f52f7ea02c137f52ce2e7f2
+  RxRelay: b9e2483e83f46e4e7bf1234c6fe418e5c2eaf825
+  RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  XMLMapper: 45ff16367092620b0b4adbc5e42dd8db6ebb5e0d
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 13776864de6dc819b79f30c5af97782c266a04ed
+
+COCOAPODS: 1.10.1

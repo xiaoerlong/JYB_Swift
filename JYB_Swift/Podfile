@@ -1,0 +1,18 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '10.0'
+use_frameworks!
+
+target 'JYB_Swift' do
+  pod 'Kingfisher'
+  pod 'SnapKit', '~> 5.0.0'
+  pod 'CocoaAsyncSocket'
+  pod 'Moya', '~> 14.0'
+  pod 'ObjectMapper'
+#  pod 'Socket.IO-Client-Swift', '~> 15.2.0'
+  pod 'RxSwift', '6.0.0-rc.2'
+  pod 'RxCocoa', '6.0.0-rc.2'
+  pod 'HandyJSON', '~> 5.0.2'
+  pod 'XMLMapper'
+  pod 'YYKit'
+  pod 'ReactiveCocoa', '~> 10.1'
+end

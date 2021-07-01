@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B79544425AE80ED001274C2 /* JYBCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79544325AE80ED001274C2 /* JYBCycleScrollView.swift */; };
+		5B79544D25AEE175001274C2 /* JYBSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79544C25AEE175001274C2 /* JYBSettingViewController.swift */; };
+		5B7BD66E25B194F9000F2598 /* JYBSettingItemControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BD66D25B194F9000F2598 /* JYBSettingItemControl.swift */; };
+		5B7C169525A2E31B00470E19 /* XMLParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C169425A2E31B00470E19 /* XMLParse.swift */; };
+		5B7C169825A2E64300470E19 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C169725A2E64300470E19 /* Const.swift */; };
+		5B7C169B25A3089800470E19 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5B7C169A25A3089800470E19 /* test.xml */; };
+		5B7C16A225A3138900470E19 /* TradeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C16A125A3138900470E19 /* TradeRequest.swift */; };
+		5B7C20C2259D60BF004A5E2D /* JYBLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C20C1259D60BF004A5E2D /* JYBLayoutButton.swift */; };
+		5B7C20C5259D6B6E004A5E2D /* ModuleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C20C4259D6B6E004A5E2D /* ModuleHeader.swift */; };
+		5B7C20CA259DADF9004A5E2D /* TradeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C20C9259DADF9004A5E2D /* TradeClient.swift */; };
+		5B7E0AEC25AD826D0006958C /* JYBPersonCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E0AEB25AD826D0006958C /* JYBPersonCenterViewController.swift */; };
+		5B7E0AF225AD833C0006958C /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E0AF125AD833C0006958C /* ControllerProtocol.swift */; };
+		5B7E0AF525AD8B830006958C /* JYBLoginOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E0AF425AD8B830006958C /* JYBLoginOptionViewController.swift */; };
+		5B7E0AF825AD9BC50006958C /* JYBInsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7E0AF725AD9BC50006958C /* JYBInsetLabel.swift */; };
+		5B80EB89259C5F3600342C85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80EB88259C5F3600342C85 /* AppDelegate.swift */; };
+		5B80EB90259C5F3600342C85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B80EB8E259C5F3600342C85 /* Main.storyboard */; };
+		5B80EB92259C5F3900342C85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B80EB91259C5F3900342C85 /* Assets.xcassets */; };
+		5B80EB95259C5F3900342C85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B80EB93259C5F3900342C85 /* LaunchScreen.storyboard */; };
+		5B80EBA0259C5FB000342C85 /* JYBTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80EB9F259C5FB000342C85 /* JYBTabBarViewController.swift */; };
+		5B8299BD25BFB18600623669 /* JYBPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8299BC25BFB18600623669 /* JYBPageViewController.swift */; };
+		5B8299C025BFB4E100623669 /* TestAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8299BF25BFB4E100623669 /* TestAViewController.swift */; };
+		5B8299C325BFB53800623669 /* TestBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8299C225BFB53800623669 /* TestBViewController.swift */; };
+		5B8299C625BFB54A00623669 /* TestCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8299C525BFB54A00623669 /* TestCViewController.swift */; };
+		5B8299C925C0083D00623669 /* JYBWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8299C825C0083D00623669 /* JYBWebViewController.swift */; };
+		5B8588872653A31F00918D07 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8588862653A31F00918D07 /* SimpleValidationViewController.swift */; };
+		5B85888A2653A33D00918D07 /* SimpleValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B8588892653A33D00918D07 /* SimpleValidationViewController.xib */; };
+		5B88E03A25C8EC0400621C58 /* JYBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E03925C8EC0400621C58 /* JYBLoginViewController.swift */; };
+		5B88E03E25C8F8E600621C58 /* JYBLoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E03D25C8F8E600621C58 /* JYBLoginNetwork.swift */; };
+		5B88E04225C9255900621C58 /* JYBUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04125C9255900621C58 /* JYBUserModel.swift */; };
+		5B88E04525C9285B00621C58 /* JYBLoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04425C9285B00621C58 /* JYBLoginClient.swift */; };
+		5B88E04925C932E600621C58 /* JYBNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04825C932E600621C58 /* JYBNavigationBar.swift */; };
+		5B88E04D25C9330400621C58 /* JYBUserNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04C25C9330400621C58 /* JYBUserNavigationBar.swift */; };
+		5B893F2E25AFD24C00B3F443 /* JYBThemeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B893F2D25AFD24C00B3F443 /* JYBThemeSettingViewController.swift */; };
+		5B8B3AB32656035C00E7086E /* UIImagepickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8B3AB22656035C00E7086E /* UIImagepickerController+RxCreate.swift */; };
+		5B8B3AC72656079700E7086E /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8B3AC62656079700E7086E /* UIImagePickerController+Rx.swift */; };
+		5B8D3E4B25C0F44C00EB328F /* JYBNewsChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E4A25C0F44C00EB328F /* JYBNewsChannelViewController.swift */; };
+		5B8D3E5E25C0FB3200EB328F /* ESPullToRefresh+Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5025C0FB3100EB328F /* ESPullToRefresh+Manager.swift */; };
+		5B8D3E5F25C0FB3200EB328F /* ESRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5125C0FB3100EB328F /* ESRefreshAnimator.swift */; };
+		5B8D3E6025C0FB3200EB328F /* ESRefreshComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5225C0FB3100EB328F /* ESRefreshComponent.swift */; };
+		5B8D3E6125C0FB3200EB328F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5425C0FB3200EB328F /* Localizable.strings */; };
+		5B8D3E6225C0FB3200EB328F /* ESRefreshHeaderAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5825C0FB3200EB328F /* ESRefreshHeaderAnimator.swift */; };
+		5B8D3E6325C0FB3200EB328F /* icon_pull_to_refresh_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5925C0FB3200EB328F /* icon_pull_to_refresh_arrow@2x.png */; };
+		5B8D3E6425C0FB3200EB328F /* ESRefreshFooterAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5A25C0FB3200EB328F /* ESRefreshFooterAnimator.swift */; };
+		5B8D3E6525C0FB3200EB328F /* ESRefreshProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5B25C0FB3200EB328F /* ESRefreshProtocol.swift */; };
+		5B8D3E6625C0FB3200EB328F /* ES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5C25C0FB3200EB328F /* ES.swift */; };
+		5B8D3E6725C0FB3200EB328F /* ESPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5D25C0FB3200EB328F /* ESPullToRefresh.swift */; };
+		5B8D3E6B25C1165A00EB328F /* JYBNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E6A25C1165A00EB328F /* JYBNetworkClient.swift */; };
+		5B904F81260D71CD00A9795F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B904F80260D71CD00A9795F /* AppManager.swift */; };
+		5B92CEBE25ABFC5400605249 /* TradeCommClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92CEBD25ABFC5400605249 /* TradeCommClient.swift */; };
+		5B94B054264E62FA00D312F0 /* JYBTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94B053264E62FA00D312F0 /* JYBTestViewController.swift */; };
+		5B94FBB0260ADB6600610AAC /* HomeAppsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94FBAF260ADB6600610AAC /* HomeAppsVC.swift */; };
+		5B94FBB5260AE53100610AAC /* HomeAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94FBB4260AE53100610AAC /* HomeAppModel.swift */; };
+		5B998C7B260C1EF600DAC08D /* MainServerNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B998C7A260C1EF600DAC08D /* MainServerNetworkManager.swift */; };
+		5B998C7E260C201300DAC08D /* MainNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B998C7D260C201300DAC08D /* MainNetworkClient.swift */; };
+		5B998C81260C232500DAC08D /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B998C80260C232500DAC08D /* HomePageVC.swift */; };
+		5B998C86260C26BF00DAC08D /* HomeAppsTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B998C85260C26BF00DAC08D /* HomeAppsTopView.swift */; };
+		5B998C8A260C28EB00DAC08D /* HomeAppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B998C89260C28EB00DAC08D /* HomeAppCell.swift */; };
+		5B998C94260C782900DAC08D /* Pods_JYB_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F532782ED6D7FC2FD7B402 /* Pods_JYB_Swift.framework */; };
+		5B998D16260CA4F000DAC08D /* HomeAppsBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B998D15260CA4F000DAC08D /* HomeAppsBottomView.swift */; };
+		5B9D41D525C25112002C97AE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D41D425C25111002C97AE /* NetworkManager.swift */; };
+		5B9D41E825C260C3002C97AE /* JYBNewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D41E725C260C3002C97AE /* JYBNewsModel.swift */; };
+		5BA3C8DF26521731009DC87B /* JYBLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA3C8DE26521731009DC87B /* JYBLoginViewModel.swift */; };
+		5BB5DB2625C3EE5300300EED /* JYBRefreshHeaderAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5DB2525C3EE5300300EED /* JYBRefreshHeaderAnimator.swift */; };
+		5BB5DB2A25C3F3D500300EED /* JYBRefreshManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB5DB2925C3F3D500300EED /* JYBRefreshManager.swift */; };
+		5BBB92D1259C66320024372B /* JYBTradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB92D0259C66320024372B /* JYBTradeViewController.swift */; };
+		5BBB92D6259C69860024372B /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB92D5259C69860024372B /* Extension.swift */; };
+		5BBB92DA259C69F40024372B /* JYBNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB92D9259C69F40024372B /* JYBNavigationController.swift */; };
+		5BBB92DE259C73B40024372B /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB92DD259C73B40024372B /* Theme.swift */; };
+		5BE1FC1E25B565A2004F077E /* JYBNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE1FC1D25B565A2004F077E /* JYBNewsViewController.swift */; };
+		5BE1FC2325B56B80004F077E /* JYBSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE1FC2225B56B80004F077E /* JYBSegmentView.swift */; };
+		5BF34B7D259C7DC700461E29 /* JYBTradeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF34B7C259C7DC700461E29 /* JYBTradeLoginViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		40D3E7E5580A9051BC0D81B7 /* Pods-JYB_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYB_Swift.release.xcconfig"; path = "Target Support Files/Pods-JYB_Swift/Pods-JYB_Swift.release.xcconfig"; sourceTree = "<group>"; };
+		5B79544325AE80ED001274C2 /* JYBCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBCycleScrollView.swift; sourceTree = "<group>"; };
+		5B79544C25AEE175001274C2 /* JYBSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBSettingViewController.swift; sourceTree = "<group>"; };
+		5B7BD66D25B194F9000F2598 /* JYBSettingItemControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBSettingItemControl.swift; sourceTree = "<group>"; };
+		5B7C169425A2E31B00470E19 /* XMLParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParse.swift; sourceTree = "<group>"; };
+		5B7C169725A2E64300470E19 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		5B7C169A25A3089800470E19 /* test.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		5B7C16A125A3138900470E19 /* TradeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRequest.swift; sourceTree = "<group>"; };
+		5B7C20C1259D60BF004A5E2D /* JYBLayoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLayoutButton.swift; sourceTree = "<group>"; };
+		5B7C20C4259D6B6E004A5E2D /* ModuleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleHeader.swift; sourceTree = "<group>"; };
+		5B7C20C9259DADF9004A5E2D /* TradeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeClient.swift; sourceTree = "<group>"; };
+		5B7E0AEB25AD826D0006958C /* JYBPersonCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBPersonCenterViewController.swift; sourceTree = "<group>"; };
+		5B7E0AF125AD833C0006958C /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
+		5B7E0AF425AD8B830006958C /* JYBLoginOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLoginOptionViewController.swift; sourceTree = "<group>"; };
+		5B7E0AF725AD9BC50006958C /* JYBInsetLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBInsetLabel.swift; sourceTree = "<group>"; };
+		5B80EB85259C5F3600342C85 /* JYB_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JYB_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B80EB88259C5F3600342C85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B80EB8F259C5F3600342C85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B80EB91259C5F3900342C85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B80EB94259C5F3900342C85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B80EB96259C5F3A00342C85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B80EB9F259C5FB000342C85 /* JYBTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBTabBarViewController.swift; sourceTree = "<group>"; };
+		5B8299BC25BFB18600623669 /* JYBPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBPageViewController.swift; sourceTree = "<group>"; };
+		5B8299BF25BFB4E100623669 /* TestAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAViewController.swift; sourceTree = "<group>"; };
+		5B8299C225BFB53800623669 /* TestBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBViewController.swift; sourceTree = "<group>"; };
+		5B8299C525BFB54A00623669 /* TestCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCViewController.swift; sourceTree = "<group>"; };
+		5B8299C825C0083D00623669 /* JYBWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBWebViewController.swift; sourceTree = "<group>"; };
+		5B8588862653A31F00918D07 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
+		5B8588892653A33D00918D07 /* SimpleValidationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleValidationViewController.xib; sourceTree = "<group>"; };
+		5B88E03925C8EC0400621C58 /* JYBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLoginViewController.swift; sourceTree = "<group>"; };
+		5B88E03D25C8F8E600621C58 /* JYBLoginNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLoginNetwork.swift; sourceTree = "<group>"; };
+		5B88E04125C9255900621C58 /* JYBUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBUserModel.swift; sourceTree = "<group>"; };
+		5B88E04425C9285B00621C58 /* JYBLoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLoginClient.swift; sourceTree = "<group>"; };
+		5B88E04825C932E600621C58 /* JYBNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNavigationBar.swift; sourceTree = "<group>"; };
+		5B88E04C25C9330400621C58 /* JYBUserNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBUserNavigationBar.swift; sourceTree = "<group>"; };
+		5B893F2D25AFD24C00B3F443 /* JYBThemeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBThemeSettingViewController.swift; sourceTree = "<group>"; };
+		5B8B3AB22656035C00E7086E /* UIImagepickerController+RxCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagepickerController+RxCreate.swift"; sourceTree = "<group>"; };
+		5B8B3AC62656079700E7086E /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
+		5B8D3E4A25C0F44C00EB328F /* JYBNewsChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNewsChannelViewController.swift; sourceTree = "<group>"; };
+		5B8D3E5025C0FB3100EB328F /* ESPullToRefresh+Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ESPullToRefresh+Manager.swift"; sourceTree = "<group>"; };
+		5B8D3E5125C0FB3100EB328F /* ESRefreshAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshAnimator.swift; sourceTree = "<group>"; };
+		5B8D3E5225C0FB3100EB328F /* ESRefreshComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshComponent.swift; sourceTree = "<group>"; };
+		5B8D3E5525C0FB3200EB328F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5B8D3E5625C0FB3200EB328F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5B8D3E5725C0FB3200EB328F /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5B8D3E5825C0FB3200EB328F /* ESRefreshHeaderAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshHeaderAnimator.swift; sourceTree = "<group>"; };
+		5B8D3E5925C0FB3200EB328F /* icon_pull_to_refresh_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_pull_to_refresh_arrow@2x.png"; sourceTree = "<group>"; };
+		5B8D3E5A25C0FB3200EB328F /* ESRefreshFooterAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshFooterAnimator.swift; sourceTree = "<group>"; };
+		5B8D3E5B25C0FB3200EB328F /* ESRefreshProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshProtocol.swift; sourceTree = "<group>"; };
+		5B8D3E5C25C0FB3200EB328F /* ES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ES.swift; sourceTree = "<group>"; };
+		5B8D3E5D25C0FB3200EB328F /* ESPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPullToRefresh.swift; sourceTree = "<group>"; };
+		5B8D3E6A25C1165A00EB328F /* JYBNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNetworkClient.swift; sourceTree = "<group>"; };
+		5B904F80260D71CD00A9795F /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		5B92CEBD25ABFC5400605249 /* TradeCommClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeCommClient.swift; sourceTree = "<group>"; };
+		5B94B053264E62FA00D312F0 /* JYBTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBTestViewController.swift; sourceTree = "<group>"; };
+		5B94FBAF260ADB6600610AAC /* HomeAppsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppsVC.swift; sourceTree = "<group>"; };
+		5B94FBB4260AE53100610AAC /* HomeAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppModel.swift; sourceTree = "<group>"; };
+		5B998C7A260C1EF600DAC08D /* MainServerNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServerNetworkManager.swift; sourceTree = "<group>"; };
+		5B998C7D260C201300DAC08D /* MainNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNetworkClient.swift; sourceTree = "<group>"; };
+		5B998C80260C232500DAC08D /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		5B998C85260C26BF00DAC08D /* HomeAppsTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppsTopView.swift; sourceTree = "<group>"; };
+		5B998C89260C28EB00DAC08D /* HomeAppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppCell.swift; sourceTree = "<group>"; };
+		5B998D15260CA4F000DAC08D /* HomeAppsBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppsBottomView.swift; sourceTree = "<group>"; };
+		5B9D41D425C25111002C97AE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		5B9D41E725C260C3002C97AE /* JYBNewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNewsModel.swift; sourceTree = "<group>"; };
+		5BA3C8DE26521731009DC87B /* JYBLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLoginViewModel.swift; sourceTree = "<group>"; };
+		5BB5DB2525C3EE5300300EED /* JYBRefreshHeaderAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBRefreshHeaderAnimator.swift; sourceTree = "<group>"; };
+		5BB5DB2925C3F3D500300EED /* JYBRefreshManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBRefreshManager.swift; sourceTree = "<group>"; };
+		5BBB92D0259C66320024372B /* JYBTradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBTradeViewController.swift; sourceTree = "<group>"; };
+		5BBB92D5259C69860024372B /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		5BBB92D9259C69F40024372B /* JYBNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNavigationController.swift; sourceTree = "<group>"; };
+		5BBB92DD259C73B40024372B /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		5BE1FC1D25B565A2004F077E /* JYBNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNewsViewController.swift; sourceTree = "<group>"; };
+		5BE1FC2225B56B80004F077E /* JYBSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBSegmentView.swift; sourceTree = "<group>"; };
+		5BF34B7C259C7DC700461E29 /* JYBTradeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBTradeLoginViewController.swift; sourceTree = "<group>"; };
+		65F532782ED6D7FC2FD7B402 /* Pods_JYB_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JYB_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA32C9C87C2037BD78AE588F /* Pods-JYB_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYB_Swift.debug.xcconfig"; path = "Target Support Files/Pods-JYB_Swift/Pods-JYB_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B80EB82259C5F3600342C85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B998C94260C782900DAC08D /* Pods_JYB_Swift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58CB66CD23B9551800394699 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65F532782ED6D7FC2FD7B402 /* Pods_JYB_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B79544225AE8018001274C2 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				5B8D3E4E25C0FB2400EB328F /* ESPull */,
+				5B79544325AE80ED001274C2 /* JYBCycleScrollView.swift */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		5B79544B25AEE163001274C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E0AF425AD8B830006958C /* JYBLoginOptionViewController.swift */,
+				5B7BD66D25B194F9000F2598 /* JYBSettingItemControl.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5B7C20C8259DADBF004A5E2D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B7C20C9259DADF9004A5E2D /* TradeClient.swift */,
+				5B92CEBD25ABFC5400605249 /* TradeCommClient.swift */,
+				5B7C169425A2E31B00470E19 /* XMLParse.swift */,
+				5B7C16A125A3138900470E19 /* TradeRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5B7E0AE925AD81F60006958C /* PersonCenter */ = {
+			isa = PBXGroup;
+			children = (
+				5B79544B25AEE163001274C2 /* View */,
+				5B7E0AEA25AD82070006958C /* Controller */,
+			);
+			path = PersonCenter;
+			sourceTree = "<group>";
+		};
+		5B7E0AEA25AD82070006958C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E0AEB25AD826D0006958C /* JYBPersonCenterViewController.swift */,
+				5B79544C25AEE175001274C2 /* JYBSettingViewController.swift */,
+				5B893F2D25AFD24C00B3F443 /* JYBThemeSettingViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5B7E0AEF25AD83090006958C /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5B7E0AF125AD833C0006958C /* ControllerProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		5B80EB7C259C5F3600342C85 = {
+			isa = PBXGroup;
+			children = (
+				5B80EB87259C5F3600342C85 /* JYB_Swift */,
+				5B80EB86259C5F3600342C85 /* Products */,
+				E9A18FCFECBE3C430EDD6D07 /* Pods */,
+				58CB66CD23B9551800394699 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B80EB86259C5F3600342C85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B80EB85259C5F3600342C85 /* JYB_Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B80EB87259C5F3600342C85 /* JYB_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5B94B052264E62DA00D312F0 /* MVVMTest */,
+				5B8D3E6925C1164200EB328F /* Network */,
+				5B79544225AE8018001274C2 /* ThirdParty */,
+				5B7E0AEF25AD83090006958C /* Protocol */,
+				5BBB92D4259C696A0024372B /* Tool */,
+				5B80EBA5259C5FF800342C85 /* Resource */,
+				5B80EBA4259C5FED00342C85 /* App */,
+				5B80EB9E259C5F8600342C85 /* Base */,
+				5BBB92CE259C64B80024372B /* Module */,
+			);
+			path = JYB_Swift;
+			sourceTree = "<group>";
+		};
+		5B80EB9E259C5F8600342C85 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5B80EB9F259C5FB000342C85 /* JYBTabBarViewController.swift */,
+				5BBB92D9259C69F40024372B /* JYBNavigationController.swift */,
+				5B7C20C1259D60BF004A5E2D /* JYBLayoutButton.swift */,
+				5B7E0AF725AD9BC50006958C /* JYBInsetLabel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		5B80EBA4259C5FED00342C85 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				5B80EB88259C5F3600342C85 /* AppDelegate.swift */,
+				5BBB92DD259C73B40024372B /* Theme.swift */,
+				5B904F80260D71CD00A9795F /* AppManager.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		5B80EBA5259C5FF800342C85 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5B80EB96259C5F3A00342C85 /* Info.plist */,
+				5B80EB91259C5F3900342C85 /* Assets.xcassets */,
+				5B80EB8E259C5F3600342C85 /* Main.storyboard */,
+				5B80EB93259C5F3900342C85 /* LaunchScreen.storyboard */,
+				5B7C169A25A3089800470E19 /* test.xml */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5B88E03525C8EBA100621C58 /* Login&Register */ = {
+			isa = PBXGroup;
+			children = (
+				5B88E03C25C8F8D100621C58 /* Network */,
+				5B88E03825C8EBBA00621C58 /* Models */,
+				5B88E03725C8EBB200621C58 /* ViewModel */,
+				5B88E03625C8EBAB00621C58 /* Views */,
+			);
+			path = "Login&Register";
+			sourceTree = "<group>";
+		};
+		5B88E03625C8EBAB00621C58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B88E03925C8EC0400621C58 /* JYBLoginViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B88E03725C8EBB200621C58 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5BA3C8DE26521731009DC87B /* JYBLoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B88E03825C8EBBA00621C58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B88E04125C9255900621C58 /* JYBUserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B88E03C25C8F8D100621C58 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B88E03D25C8F8E600621C58 /* JYBLoginNetwork.swift */,
+				5B88E04425C9285B00621C58 /* JYBLoginClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5B88E04725C932BB00621C58 /* CommonView */ = {
+			isa = PBXGroup;
+			children = (
+				5B88E04825C932E600621C58 /* JYBNavigationBar.swift */,
+				5B88E04C25C9330400621C58 /* JYBUserNavigationBar.swift */,
+			);
+			path = CommonView;
+			sourceTree = "<group>";
+		};
+		5B8D3E4E25C0FB2400EB328F /* ESPull */ = {
+			isa = PBXGroup;
+			children = (
+				5B8D3E4F25C0FB3100EB328F /* Sources */,
+			);
+			path = ESPull;
+			sourceTree = "<group>";
+		};
+		5B8D3E4F25C0FB3100EB328F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5B8D3E5025C0FB3100EB328F /* ESPullToRefresh+Manager.swift */,
+				5B8D3E5125C0FB3100EB328F /* ESRefreshAnimator.swift */,
+				5B8D3E5225C0FB3100EB328F /* ESRefreshComponent.swift */,
+				5B8D3E5325C0FB3100EB328F /* Animator */,
+				5B8D3E5B25C0FB3200EB328F /* ESRefreshProtocol.swift */,
+				5B8D3E5C25C0FB3200EB328F /* ES.swift */,
+				5B8D3E5D25C0FB3200EB328F /* ESPullToRefresh.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5B8D3E5325C0FB3100EB328F /* Animator */ = {
+			isa = PBXGroup;
+			children = (
+				5B8D3E5425C0FB3200EB328F /* Localizable.strings */,
+				5B8D3E5825C0FB3200EB328F /* ESRefreshHeaderAnimator.swift */,
+				5B8D3E5925C0FB3200EB328F /* icon_pull_to_refresh_arrow@2x.png */,
+				5B8D3E5A25C0FB3200EB328F /* ESRefreshFooterAnimator.swift */,
+			);
+			path = Animator;
+			sourceTree = "<group>";
+		};
+		5B8D3E6925C1164200EB328F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5B998C79260C1ECF00DAC08D /* MainServers */,
+				5B9D41D425C25111002C97AE /* NetworkManager.swift */,
+				5B8D3E6A25C1165A00EB328F /* JYBNetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5B94B052264E62DA00D312F0 /* MVVMTest */ = {
+			isa = PBXGroup;
+			children = (
+				5B94B053264E62FA00D312F0 /* JYBTestViewController.swift */,
+				5B8588862653A31F00918D07 /* SimpleValidationViewController.swift */,
+				5B8588892653A33D00918D07 /* SimpleValidationViewController.xib */,
+				5B8B3AB22656035C00E7086E /* UIImagepickerController+RxCreate.swift */,
+				5B8B3AC62656079700E7086E /* UIImagePickerController+Rx.swift */,
+			);
+			path = MVVMTest;
+			sourceTree = "<group>";
+		};
+		5B94FBAD260ADAC100610AAC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5B998C84260C26A700DAC08D /* Views */,
+				5B94FBB3260AE51600610AAC /* Models */,
+				5B94FBAE260ADB4400610AAC /* Controllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5B94FBAE260ADB4400610AAC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B998C80260C232500DAC08D /* HomePageVC.swift */,
+				5B94FBAF260ADB6600610AAC /* HomeAppsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B94FBB3260AE51600610AAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B94FBB4260AE53100610AAC /* HomeAppModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B998C79260C1ECF00DAC08D /* MainServers */ = {
+			isa = PBXGroup;
+			children = (
+				5B998C7A260C1EF600DAC08D /* MainServerNetworkManager.swift */,
+				5B998C7D260C201300DAC08D /* MainNetworkClient.swift */,
+			);
+			path = MainServers;
+			sourceTree = "<group>";
+		};
+		5B998C84260C26A700DAC08D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B998C85260C26BF00DAC08D /* HomeAppsTopView.swift */,
+				5B998D15260CA4F000DAC08D /* HomeAppsBottomView.swift */,
+				5B998C89260C28EB00DAC08D /* HomeAppCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B9D41E625C26099002C97AE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D41E725C260C3002C97AE /* JYBNewsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5BB5DB2825C3F3B200300EED /* RefreshManager */ = {
+			isa = PBXGroup;
+			children = (
+				5BB5DB2925C3F3D500300EED /* JYBRefreshManager.swift */,
+				5BB5DB2525C3EE5300300EED /* JYBRefreshHeaderAnimator.swift */,
+			);
+			path = RefreshManager;
+			sourceTree = "<group>";
+		};
+		5BBB92CE259C64B80024372B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				5B94FBAD260ADAC100610AAC /* Home */,
+				5B88E04725C932BB00621C58 /* CommonView */,
+				5B88E03525C8EBA100621C58 /* Login&Register */,
+				5BE1FC1C25B564F4004F077E /* News */,
+				5B7E0AE925AD81F60006958C /* PersonCenter */,
+				5BBB92CF259C64C70024372B /* Trade */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		5BBB92CF259C64C70024372B /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+				5B7C20C8259DADBF004A5E2D /* Network */,
+				5BBB92D0259C66320024372B /* JYBTradeViewController.swift */,
+				5BF34B7C259C7DC700461E29 /* JYBTradeLoginViewController.swift */,
+			);
+			path = Trade;
+			sourceTree = "<group>";
+		};
+		5BBB92D4259C696A0024372B /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				5BB5DB2825C3F3B200300EED /* RefreshManager */,
+				5BBB92D5259C69860024372B /* Extension.swift */,
+				5B7C20C4259D6B6E004A5E2D /* ModuleHeader.swift */,
+				5B7C169725A2E64300470E19 /* Const.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		5BE1FC1C25B564F4004F077E /* News */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D41E625C26099002C97AE /* Model */,
+				5BE1FC2125B56B32004F077E /* View */,
+				5BE1FC2025B56B27004F077E /* Controller */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		5BE1FC2025B56B27004F077E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BE1FC1D25B565A2004F077E /* JYBNewsViewController.swift */,
+				5B8D3E4A25C0F44C00EB328F /* JYBNewsChannelViewController.swift */,
+				5B8299BF25BFB4E100623669 /* TestAViewController.swift */,
+				5B8299C225BFB53800623669 /* TestBViewController.swift */,
+				5B8299C525BFB54A00623669 /* TestCViewController.swift */,
+				5B8299C825C0083D00623669 /* JYBWebViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BE1FC2125B56B32004F077E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BE1FC2225B56B80004F077E /* JYBSegmentView.swift */,
+				5B8299BC25BFB18600623669 /* JYBPageViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E9A18FCFECBE3C430EDD6D07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CA32C9C87C2037BD78AE588F /* Pods-JYB_Swift.debug.xcconfig */,
+				40D3E7E5580A9051BC0D81B7 /* Pods-JYB_Swift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B80EB84259C5F3600342C85 /* JYB_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B80EB99259C5F3A00342C85 /* Build configuration list for PBXNativeTarget "JYB_Swift" */;
+			buildPhases = (
+				923825E717E6FE5551F5D4DE /* [CP] Check Pods Manifest.lock */,
+				5B80EB81259C5F3600342C85 /* Sources */,
+				5B80EB82259C5F3600342C85 /* Frameworks */,
+				5B80EB83259C5F3600342C85 /* Resources */,
+				33D2F8FAF80550ED7830E5AA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JYB_Swift;
+			productName = JYB_Swift;
+			productReference = 5B80EB85259C5F3600342C85 /* JYB_Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B80EB7D259C5F3600342C85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JYB;
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5B80EB84259C5F3600342C85 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 5B80EB80259C5F3600342C85 /* Build configuration list for PBXProject "JYB_Swift" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 5B80EB7C259C5F3600342C85;
+			productRefGroup = 5B80EB86259C5F3600342C85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B80EB84259C5F3600342C85 /* JYB_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B80EB83259C5F3600342C85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8D3E6325C0FB3200EB328F /* icon_pull_to_refresh_arrow@2x.png in Resources */,
+				5B80EB95259C5F3900342C85 /* LaunchScreen.storyboard in Resources */,
+				5B85888A2653A33D00918D07 /* SimpleValidationViewController.xib in Resources */,
+				5B8D3E6125C0FB3200EB328F /* Localizable.strings in Resources */,
+				5B80EB92259C5F3900342C85 /* Assets.xcassets in Resources */,
+				5B80EB90259C5F3600342C85 /* Main.storyboard in Resources */,
+				5B7C169B25A3089800470E19 /* test.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33D2F8FAF80550ED7830E5AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JYB_Swift/Pods-JYB_Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JYB_Swift/Pods-JYB_Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JYB_Swift/Pods-JYB_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		923825E717E6FE5551F5D4DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JYB_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B80EB81259C5F3600342C85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B80EBA0259C5FB000342C85 /* JYBTabBarViewController.swift in Sources */,
+				5B7BD66E25B194F9000F2598 /* JYBSettingItemControl.swift in Sources */,
+				5BF34B7D259C7DC700461E29 /* JYBTradeLoginViewController.swift in Sources */,
+				5B8B3AB32656035C00E7086E /* UIImagepickerController+RxCreate.swift in Sources */,
+				5B8299BD25BFB18600623669 /* JYBPageViewController.swift in Sources */,
+				5B88E03A25C8EC0400621C58 /* JYBLoginViewController.swift in Sources */,
+				5B998C8A260C28EB00DAC08D /* HomeAppCell.swift in Sources */,
+				5BBB92D1259C66320024372B /* JYBTradeViewController.swift in Sources */,
+				5B8D3E6225C0FB3200EB328F /* ESRefreshHeaderAnimator.swift in Sources */,
+				5BA3C8DF26521731009DC87B /* JYBLoginViewModel.swift in Sources */,
+				5B8D3E5E25C0FB3200EB328F /* ESPullToRefresh+Manager.swift in Sources */,
+				5B8D3E6B25C1165A00EB328F /* JYBNetworkClient.swift in Sources */,
+				5B7E0AEC25AD826D0006958C /* JYBPersonCenterViewController.swift in Sources */,
+				5B92CEBE25ABFC5400605249 /* TradeCommClient.swift in Sources */,
+				5B7C20C5259D6B6E004A5E2D /* ModuleHeader.swift in Sources */,
+				5B88E04225C9255900621C58 /* JYBUserModel.swift in Sources */,
+				5B9D41E825C260C3002C97AE /* JYBNewsModel.swift in Sources */,
+				5B7C169525A2E31B00470E19 /* XMLParse.swift in Sources */,
+				5B8299C625BFB54A00623669 /* TestCViewController.swift in Sources */,
+				5B79544D25AEE175001274C2 /* JYBSettingViewController.swift in Sources */,
+				5B7C169825A2E64300470E19 /* Const.swift in Sources */,
+				5BE1FC2325B56B80004F077E /* JYBSegmentView.swift in Sources */,
+				5BBB92DA259C69F40024372B /* JYBNavigationController.swift in Sources */,
+				5B88E03E25C8F8E600621C58 /* JYBLoginNetwork.swift in Sources */,
+				5B9D41D525C25112002C97AE /* NetworkManager.swift in Sources */,
+				5B8D3E6625C0FB3200EB328F /* ES.swift in Sources */,
+				5B8D3E6725C0FB3200EB328F /* ESPullToRefresh.swift in Sources */,
+				5B904F81260D71CD00A9795F /* AppManager.swift in Sources */,
+				5B88E04925C932E600621C58 /* JYBNavigationBar.swift in Sources */,
+				5B8588872653A31F00918D07 /* SimpleValidationViewController.swift in Sources */,
+				5B8299C925C0083D00623669 /* JYBWebViewController.swift in Sources */,
+				5B94B054264E62FA00D312F0 /* JYBTestViewController.swift in Sources */,
+				5B7E0AF225AD833C0006958C /* ControllerProtocol.swift in Sources */,
+				5B8D3E5F25C0FB3200EB328F /* ESRefreshAnimator.swift in Sources */,
+				5B7C16A225A3138900470E19 /* TradeRequest.swift in Sources */,
+				5B79544425AE80ED001274C2 /* JYBCycleScrollView.swift in Sources */,
+				5B88E04525C9285B00621C58 /* JYBLoginClient.swift in Sources */,
+				5B8D3E6525C0FB3200EB328F /* ESRefreshProtocol.swift in Sources */,
+				5B8299C325BFB53800623669 /* TestBViewController.swift in Sources */,
+				5BBB92DE259C73B40024372B /* Theme.swift in Sources */,
+				5BB5DB2A25C3F3D500300EED /* JYBRefreshManager.swift in Sources */,
+				5BE1FC1E25B565A2004F077E /* JYBNewsViewController.swift in Sources */,
+				5B7E0AF525AD8B830006958C /* JYBLoginOptionViewController.swift in Sources */,
+				5B998D16260CA4F000DAC08D /* HomeAppsBottomView.swift in Sources */,
+				5B8299C025BFB4E100623669 /* TestAViewController.swift in Sources */,
+				5B80EB89259C5F3600342C85 /* AppDelegate.swift in Sources */,
+				5B7E0AF825AD9BC50006958C /* JYBInsetLabel.swift in Sources */,
+				5B88E04D25C9330400621C58 /* JYBUserNavigationBar.swift in Sources */,
+				5B7C20CA259DADF9004A5E2D /* TradeClient.swift in Sources */,
+				5B998C81260C232500DAC08D /* HomePageVC.swift in Sources */,
+				5B893F2E25AFD24C00B3F443 /* JYBThemeSettingViewController.swift in Sources */,
+				5B8B3AC72656079700E7086E /* UIImagePickerController+Rx.swift in Sources */,
+				5B94FBB0260ADB6600610AAC /* HomeAppsVC.swift in Sources */,
+				5B94FBB5260AE53100610AAC /* HomeAppModel.swift in Sources */,
+				5BBB92D6259C69860024372B /* Extension.swift in Sources */,
+				5B998C7B260C1EF600DAC08D /* MainServerNetworkManager.swift in Sources */,
+				5B8D3E4B25C0F44C00EB328F /* JYBNewsChannelViewController.swift in Sources */,
+				5B998C7E260C201300DAC08D /* MainNetworkClient.swift in Sources */,
+				5B8D3E6425C0FB3200EB328F /* ESRefreshFooterAnimator.swift in Sources */,
+				5BB5DB2625C3EE5300300EED /* JYBRefreshHeaderAnimator.swift in Sources */,
+				5B7C20C2259D60BF004A5E2D /* JYBLayoutButton.swift in Sources */,
+				5B8D3E6025C0FB3200EB328F /* ESRefreshComponent.swift in Sources */,
+				5B998C86260C26BF00DAC08D /* HomeAppsTopView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5B80EB8E259C5F3600342C85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B80EB8F259C5F3600342C85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5B80EB93259C5F3900342C85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B80EB94259C5F3900342C85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5B8D3E5425C0FB3200EB328F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B8D3E5525C0FB3200EB328F /* zh-Hans */,
+				5B8D3E5625C0FB3200EB328F /* Base */,
+				5B8D3E5725C0FB3200EB328F /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B80EB97259C5F3A00342C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B80EB98259C5F3A00342C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B80EB9A259C5F3A00342C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA32C9C87C2037BD78AE588F /* Pods-JYB_Swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HQ3E92U25;
+				INFOPLIST_FILE = JYB_Swift/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tradego.JYB-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B80EB9B259C5F3A00342C85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40D3E7E5580A9051BC0D81B7 /* Pods-JYB_Swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HQ3E92U25;
+				INFOPLIST_FILE = JYB_Swift/Resource/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tradego.JYB-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B80EB80259C5F3600342C85 /* Build configuration list for PBXProject "JYB_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B80EB97259C5F3A00342C85 /* Debug */,
+				5B80EB98259C5F3A00342C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B80EB99259C5F3A00342C85 /* Build configuration list for PBXNativeTarget "JYB_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B80EB9A259C5F3A00342C85 /* Debug */,
+				5B80EB9B259C5F3A00342C85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B80EB7D259C5F3600342C85 /* Project object */;
+}
