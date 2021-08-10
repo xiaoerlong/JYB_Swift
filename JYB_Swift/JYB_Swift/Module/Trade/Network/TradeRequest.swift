@@ -50,7 +50,7 @@ class LoginRequest: TradeRequest {
     override init() {
         super.init()
         nodeName = "login"
-        user_id = "222224"
+        user_id = "222222"
         password = "ts1456"
     }
     

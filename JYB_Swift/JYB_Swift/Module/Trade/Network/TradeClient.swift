@@ -99,11 +99,16 @@ extension TradeClient {
         }
         // 将对象转为xml字符串
         let loginRequest = LoginRequest()
+        loginRequest.msgnum = 999
+        
         guard let xmlString = loginRequest.toXMLString() else {
             print("模型转换成xml失败")
             return
         }
         print("xmlString:\(xmlString)")
+//        let cxml = xmlString.utf8CString
+//        let xmlLen = cxml.count
+//        var data = NSMutableData()
         // MDPHead + XMLHead + int + XML
         var pkgSize = MemoryLayout<CInt>.size + MemoryLayout<CShort>.size + MemoryLayout<CInt>.size
         

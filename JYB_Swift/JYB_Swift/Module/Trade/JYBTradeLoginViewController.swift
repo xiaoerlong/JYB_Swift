@@ -280,13 +280,13 @@ class JYBTradeLoginViewController: UIViewController {
     }
     
     @objc private func login() {
-//        guard let accountTextField = textAreaView.viewWithTag(100) as? UITextField, let account = accountTextField.text else {
-//            return
-//        }
-//        guard let passwordTextField = textAreaView.viewWithTag(100) as? UITextField, let password = passwordTextField.text else {
-//            return
-//        }
-//        TradeClient.shared.login(account: account, password: password)
+        guard let accountTextField = textAreaView.viewWithTag(100) as? UITextField, let account = accountTextField.text else {
+            return
+        }
+        guard let passwordTextField = textAreaView.viewWithTag(100) as? UITextField, let password = passwordTextField.text else {
+            return
+        }
+        TradeClient.shared.login(account: account, password: password)
         
     }
     

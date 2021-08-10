@@ -16,13 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = JYBNavigationController.init(rootViewController: JYBLoginViewController())
+        window?.rootViewController = JYBNavigationController.init(rootViewController: JYBTradeLoginViewController())
         window?.makeKeyAndVisible()
         
         AppTheme.manager.setLastedTheme()
         AppManager.manager.saveVersion()
         
         return true
+    }
+    
+    func test() {
+        
     }
 }
 

@@ -31,8 +31,6 @@
 		5B8299C325BFB53800623669 /* TestBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8299C225BFB53800623669 /* TestBViewController.swift */; };
 		5B8299C625BFB54A00623669 /* TestCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8299C525BFB54A00623669 /* TestCViewController.swift */; };
 		5B8299C925C0083D00623669 /* JYBWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8299C825C0083D00623669 /* JYBWebViewController.swift */; };
-		5B8588872653A31F00918D07 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8588862653A31F00918D07 /* SimpleValidationViewController.swift */; };
-		5B85888A2653A33D00918D07 /* SimpleValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B8588892653A33D00918D07 /* SimpleValidationViewController.xib */; };
 		5B88E03A25C8EC0400621C58 /* JYBLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E03925C8EC0400621C58 /* JYBLoginViewController.swift */; };
 		5B88E03E25C8F8E600621C58 /* JYBLoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E03D25C8F8E600621C58 /* JYBLoginNetwork.swift */; };
 		5B88E04225C9255900621C58 /* JYBUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04125C9255900621C58 /* JYBUserModel.swift */; };
@@ -40,8 +38,6 @@
 		5B88E04925C932E600621C58 /* JYBNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04825C932E600621C58 /* JYBNavigationBar.swift */; };
 		5B88E04D25C9330400621C58 /* JYBUserNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04C25C9330400621C58 /* JYBUserNavigationBar.swift */; };
 		5B893F2E25AFD24C00B3F443 /* JYBThemeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B893F2D25AFD24C00B3F443 /* JYBThemeSettingViewController.swift */; };
-		5B8B3AB32656035C00E7086E /* UIImagepickerController+RxCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8B3AB22656035C00E7086E /* UIImagepickerController+RxCreate.swift */; };
-		5B8B3AC72656079700E7086E /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8B3AC62656079700E7086E /* UIImagePickerController+Rx.swift */; };
 		5B8D3E4B25C0F44C00EB328F /* JYBNewsChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E4A25C0F44C00EB328F /* JYBNewsChannelViewController.swift */; };
 		5B8D3E5E25C0FB3200EB328F /* ESPullToRefresh+Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5025C0FB3100EB328F /* ESPullToRefresh+Manager.swift */; };
 		5B8D3E5F25C0FB3200EB328F /* ESRefreshAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5125C0FB3100EB328F /* ESRefreshAnimator.swift */; };
@@ -56,7 +52,6 @@
 		5B8D3E6B25C1165A00EB328F /* JYBNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E6A25C1165A00EB328F /* JYBNetworkClient.swift */; };
 		5B904F81260D71CD00A9795F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B904F80260D71CD00A9795F /* AppManager.swift */; };
 		5B92CEBE25ABFC5400605249 /* TradeCommClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92CEBD25ABFC5400605249 /* TradeCommClient.swift */; };
-		5B94B054264E62FA00D312F0 /* JYBTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94B053264E62FA00D312F0 /* JYBTestViewController.swift */; };
 		5B94FBB0260ADB6600610AAC /* HomeAppsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94FBAF260ADB6600610AAC /* HomeAppsVC.swift */; };
 		5B94FBB5260AE53100610AAC /* HomeAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94FBB4260AE53100610AAC /* HomeAppModel.swift */; };
 		5B998C7B260C1EF600DAC08D /* MainServerNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B998C7A260C1EF600DAC08D /* MainServerNetworkManager.swift */; };
@@ -108,8 +103,6 @@
 		5B8299C225BFB53800623669 /* TestBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBViewController.swift; sourceTree = "<group>"; };
 		5B8299C525BFB54A00623669 /* TestCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCViewController.swift; sourceTree = "<group>"; };
 		5B8299C825C0083D00623669 /* JYBWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBWebViewController.swift; sourceTree = "<group>"; };
-		5B8588862653A31F00918D07 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
-		5B8588892653A33D00918D07 /* SimpleValidationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleValidationViewController.xib; sourceTree = "<group>"; };
 		5B88E03925C8EC0400621C58 /* JYBLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLoginViewController.swift; sourceTree = "<group>"; };
 		5B88E03D25C8F8E600621C58 /* JYBLoginNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLoginNetwork.swift; sourceTree = "<group>"; };
 		5B88E04125C9255900621C58 /* JYBUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBUserModel.swift; sourceTree = "<group>"; };
@@ -117,8 +110,6 @@
 		5B88E04825C932E600621C58 /* JYBNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNavigationBar.swift; sourceTree = "<group>"; };
 		5B88E04C25C9330400621C58 /* JYBUserNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBUserNavigationBar.swift; sourceTree = "<group>"; };
 		5B893F2D25AFD24C00B3F443 /* JYBThemeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBThemeSettingViewController.swift; sourceTree = "<group>"; };
-		5B8B3AB22656035C00E7086E /* UIImagepickerController+RxCreate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagepickerController+RxCreate.swift"; sourceTree = "<group>"; };
-		5B8B3AC62656079700E7086E /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		5B8D3E4A25C0F44C00EB328F /* JYBNewsChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNewsChannelViewController.swift; sourceTree = "<group>"; };
 		5B8D3E5025C0FB3100EB328F /* ESPullToRefresh+Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ESPullToRefresh+Manager.swift"; sourceTree = "<group>"; };
 		5B8D3E5125C0FB3100EB328F /* ESRefreshAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESRefreshAnimator.swift; sourceTree = "<group>"; };
@@ -135,7 +126,6 @@
 		5B8D3E6A25C1165A00EB328F /* JYBNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNetworkClient.swift; sourceTree = "<group>"; };
 		5B904F80260D71CD00A9795F /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
 		5B92CEBD25ABFC5400605249 /* TradeCommClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeCommClient.swift; sourceTree = "<group>"; };
-		5B94B053264E62FA00D312F0 /* JYBTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBTestViewController.swift; sourceTree = "<group>"; };
 		5B94FBAF260ADB6600610AAC /* HomeAppsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppsVC.swift; sourceTree = "<group>"; };
 		5B94FBB4260AE53100610AAC /* HomeAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppModel.swift; sourceTree = "<group>"; };
 		5B998C7A260C1EF600DAC08D /* MainServerNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServerNetworkManager.swift; sourceTree = "<group>"; };
@@ -257,7 +247,6 @@
 		5B80EB87259C5F3600342C85 /* JYB_Swift */ = {
 			isa = PBXGroup;
 			children = (
-				5B94B052264E62DA00D312F0 /* MVVMTest */,
 				5B8D3E6925C1164200EB328F /* Network */,
 				5B79544225AE8018001274C2 /* ThirdParty */,
 				5B7E0AEF25AD83090006958C /* Protocol */,
@@ -397,18 +386,6 @@
 				5B8D3E6A25C1165A00EB328F /* JYBNetworkClient.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		5B94B052264E62DA00D312F0 /* MVVMTest */ = {
-			isa = PBXGroup;
-			children = (
-				5B94B053264E62FA00D312F0 /* JYBTestViewController.swift */,
-				5B8588862653A31F00918D07 /* SimpleValidationViewController.swift */,
-				5B8588892653A33D00918D07 /* SimpleValidationViewController.xib */,
-				5B8B3AB22656035C00E7086E /* UIImagepickerController+RxCreate.swift */,
-				5B8B3AC62656079700E7086E /* UIImagePickerController+Rx.swift */,
-			);
-			path = MVVMTest;
 			sourceTree = "<group>";
 		};
 		5B94FBAD260ADAC100610AAC /* Home */ = {
@@ -613,7 +590,6 @@
 			files = (
 				5B8D3E6325C0FB3200EB328F /* icon_pull_to_refresh_arrow@2x.png in Resources */,
 				5B80EB95259C5F3900342C85 /* LaunchScreen.storyboard in Resources */,
-				5B85888A2653A33D00918D07 /* SimpleValidationViewController.xib in Resources */,
 				5B8D3E6125C0FB3200EB328F /* Localizable.strings in Resources */,
 				5B80EB92259C5F3900342C85 /* Assets.xcassets in Resources */,
 				5B80EB90259C5F3600342C85 /* Main.storyboard in Resources */,
@@ -673,7 +649,6 @@
 				5B80EBA0259C5FB000342C85 /* JYBTabBarViewController.swift in Sources */,
 				5B7BD66E25B194F9000F2598 /* JYBSettingItemControl.swift in Sources */,
 				5BF34B7D259C7DC700461E29 /* JYBTradeLoginViewController.swift in Sources */,
-				5B8B3AB32656035C00E7086E /* UIImagepickerController+RxCreate.swift in Sources */,
 				5B8299BD25BFB18600623669 /* JYBPageViewController.swift in Sources */,
 				5B88E03A25C8EC0400621C58 /* JYBLoginViewController.swift in Sources */,
 				5B998C8A260C28EB00DAC08D /* HomeAppCell.swift in Sources */,
@@ -699,9 +674,7 @@
 				5B8D3E6725C0FB3200EB328F /* ESPullToRefresh.swift in Sources */,
 				5B904F81260D71CD00A9795F /* AppManager.swift in Sources */,
 				5B88E04925C932E600621C58 /* JYBNavigationBar.swift in Sources */,
-				5B8588872653A31F00918D07 /* SimpleValidationViewController.swift in Sources */,
 				5B8299C925C0083D00623669 /* JYBWebViewController.swift in Sources */,
-				5B94B054264E62FA00D312F0 /* JYBTestViewController.swift in Sources */,
 				5B7E0AF225AD833C0006958C /* ControllerProtocol.swift in Sources */,
 				5B8D3E5F25C0FB3200EB328F /* ESRefreshAnimator.swift in Sources */,
 				5B7C16A225A3138900470E19 /* TradeRequest.swift in Sources */,
@@ -721,7 +694,6 @@
 				5B7C20CA259DADF9004A5E2D /* TradeClient.swift in Sources */,
 				5B998C81260C232500DAC08D /* HomePageVC.swift in Sources */,
 				5B893F2E25AFD24C00B3F443 /* JYBThemeSettingViewController.swift in Sources */,
-				5B8B3AC72656079700E7086E /* UIImagePickerController+Rx.swift in Sources */,
 				5B94FBB0260ADB6600610AAC /* HomeAppsVC.swift in Sources */,
 				5B94FBB5260AE53100610AAC /* HomeAppModel.swift in Sources */,
 				5BBB92D6259C69860024372B /* Extension.swift in Sources */,
