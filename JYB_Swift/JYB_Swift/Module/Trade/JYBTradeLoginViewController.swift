@@ -8,6 +8,10 @@
 import UIKit
 
 class JYBTradeLoginViewController: UIViewController {
+    
+    func dev_addFunc() {
+        print("dev add func")
+    }
 
     private lazy var scrollView: UIScrollView = {
         let scrollView = UIScrollView()

@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func test() {
-        
+        print("dev modified")
     }
 }
 
