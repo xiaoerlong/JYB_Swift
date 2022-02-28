@@ -3,6 +3,7 @@ PODS:
   - CocoaAsyncSocket (7.6.5)
   - HandyJSON (5.0.2)
   - Kingfisher (6.2.1)
+  - lottie-ios (3.2.3)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
@@ -29,6 +30,7 @@ DEPENDENCIES:
   - CocoaAsyncSocket
   - HandyJSON (~> 5.0.2)
   - Kingfisher
+  - lottie-ios
   - Moya (~> 14.0)
   - ObjectMapper
   - ReactiveCocoa (~> 10.1)
@@ -39,11 +41,12 @@ DEPENDENCIES:
   - YYKit
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - CocoaAsyncSocket
     - HandyJSON
     - Kingfisher
+    - lottie-ios
     - Moya
     - ObjectMapper
     - ReactiveCocoa
@@ -60,6 +63,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   ReactiveCocoa: 083ae559e6f588ce519cab412ea119b431c26a24
@@ -71,6 +75,6 @@ SPEC CHECKSUMS:
   XMLMapper: 45ff16367092620b0b4adbc5e42dd8db6ebb5e0d
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 13776864de6dc819b79f30c5af97782c266a04ed
+PODFILE CHECKSUM: f2f688daf776636fca7f2ad31402cae6238f53f4
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

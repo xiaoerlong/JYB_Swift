@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B8EB77427C8B51600A42DAB /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB77327C8B51600A42DAB /* WelcomeView.swift */; };
+		3B8EB77827C8DBED00A42DAB /* MainNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB77727C8DBED00A42DAB /* MainNetworkAPI.swift */; };
+		3B8EB77A27C8DDF100A42DAB /* MainNetworkClient1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB77927C8DDF100A42DAB /* MainNetworkClient1.swift */; };
+		3B8EB77C27C8E07000A42DAB /* ServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB77B27C8E07000A42DAB /* ServerModel.swift */; };
+		3B8EB77E27C8E18500A42DAB /* ResponseBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB77D27C8E18500A42DAB /* ResponseBaseModel.swift */; };
+		3B8FEBEC27CC5C580044AB8E /* JYBServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBEB27CC5C580044AB8E /* JYBServerManager.swift */; };
+		3B8FEBF027CC61700044AB8E /* CloudServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBEF27CC61700044AB8E /* CloudServerAPI.swift */; };
+		3B8FEBF327CC632E0044AB8E /* MainServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBF227CC632E0044AB8E /* MainServerAPI.swift */; };
+		3B8FEBF527CC63BB0044AB8E /* MainServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBF427CC63BB0044AB8E /* MainServerClient.swift */; };
+		3B8FEBF727CC776C0044AB8E /* CloudServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBF627CC776C0044AB8E /* CloudServerClient.swift */; };
+		3B8FEBF927CC97ED0044AB8E /* UserServicePkgsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBF827CC97ED0044AB8E /* UserServicePkgsModel.swift */; };
 		5B79544425AE80ED001274C2 /* JYBCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79544325AE80ED001274C2 /* JYBCycleScrollView.swift */; };
 		5B79544D25AEE175001274C2 /* JYBSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79544C25AEE175001274C2 /* JYBSettingViewController.swift */; };
 		5B7BD66E25B194F9000F2598 /* JYBSettingItemControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BD66D25B194F9000F2598 /* JYBSettingItemControl.swift */; };
@@ -76,6 +87,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B8EB77327C8B51600A42DAB /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		3B8EB77727C8DBED00A42DAB /* MainNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNetworkAPI.swift; sourceTree = "<group>"; };
+		3B8EB77927C8DDF100A42DAB /* MainNetworkClient1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNetworkClient1.swift; sourceTree = "<group>"; };
+		3B8EB77B27C8E07000A42DAB /* ServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModel.swift; sourceTree = "<group>"; };
+		3B8EB77D27C8E18500A42DAB /* ResponseBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBaseModel.swift; sourceTree = "<group>"; };
+		3B8FEBEB27CC5C580044AB8E /* JYBServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBServerManager.swift; sourceTree = "<group>"; };
+		3B8FEBEF27CC61700044AB8E /* CloudServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudServerAPI.swift; sourceTree = "<group>"; };
+		3B8FEBF227CC632E0044AB8E /* MainServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServerAPI.swift; sourceTree = "<group>"; };
+		3B8FEBF427CC63BB0044AB8E /* MainServerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServerClient.swift; sourceTree = "<group>"; };
+		3B8FEBF627CC776C0044AB8E /* CloudServerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudServerClient.swift; sourceTree = "<group>"; };
+		3B8FEBF827CC97ED0044AB8E /* UserServicePkgsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicePkgsModel.swift; sourceTree = "<group>"; };
 		40D3E7E5580A9051BC0D81B7 /* Pods-JYB_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYB_Swift.release.xcconfig"; path = "Target Support Files/Pods-JYB_Swift/Pods-JYB_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		5B79544325AE80ED001274C2 /* JYBCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBCycleScrollView.swift; sourceTree = "<group>"; };
 		5B79544C25AEE175001274C2 /* JYBSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBSettingViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +184,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B8FEBEA27CC5C310044AB8E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				3B8FEBEB27CC5C580044AB8E /* JYBServerManager.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		3B8FEBED27CC612B0044AB8E /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				3B8FEBF127CC631A0044AB8E /* MainServer */,
+				3B8FEBEE27CC613E0044AB8E /* CloudServer */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		3B8FEBEE27CC613E0044AB8E /* CloudServer */ = {
+			isa = PBXGroup;
+			children = (
+				3B8FEBEF27CC61700044AB8E /* CloudServerAPI.swift */,
+				3B8FEBF627CC776C0044AB8E /* CloudServerClient.swift */,
+			);
+			path = CloudServer;
+			sourceTree = "<group>";
+		};
+		3B8FEBF127CC631A0044AB8E /* MainServer */ = {
+			isa = PBXGroup;
+			children = (
+				3B8FEBF227CC632E0044AB8E /* MainServerAPI.swift */,
+				3B8FEBF427CC63BB0044AB8E /* MainServerClient.swift */,
+			);
+			path = MainServer;
+			sourceTree = "<group>";
+		};
 		58CB66CD23B9551800394699 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +311,7 @@
 				5B80EBA5259C5FF800342C85 /* Resource */,
 				5B80EBA4259C5FED00342C85 /* App */,
 				5B80EB9E259C5F8600342C85 /* Base */,
+				3B8FEBED27CC612B0044AB8E /* Server */,
 				5BBB92CE259C64B80024372B /* Module */,
 			);
 			path = JYB_Swift;
@@ -276,6 +334,7 @@
 				5B80EB88259C5F3600342C85 /* AppDelegate.swift */,
 				5BBB92DD259C73B40024372B /* Theme.swift */,
 				5B904F80260D71CD00A9795F /* AppManager.swift */,
+				3B8EB77327C8B51600A42DAB /* WelcomeView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -323,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				5B88E04125C9255900621C58 /* JYBUserModel.swift */,
+				3B8FEBF827CC97ED0044AB8E /* UserServicePkgsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -384,6 +444,10 @@
 				5B998C79260C1ECF00DAC08D /* MainServers */,
 				5B9D41D425C25111002C97AE /* NetworkManager.swift */,
 				5B8D3E6A25C1165A00EB328F /* JYBNetworkClient.swift */,
+				3B8EB77727C8DBED00A42DAB /* MainNetworkAPI.swift */,
+				3B8EB77927C8DDF100A42DAB /* MainNetworkClient1.swift */,
+				3B8EB77B27C8E07000A42DAB /* ServerModel.swift */,
+				3B8EB77D27C8E18500A42DAB /* ResponseBaseModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -454,6 +518,7 @@
 		5BBB92CE259C64B80024372B /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				3B8FEBEA27CC5C310044AB8E /* Global */,
 				5B94FBAD260ADAC100610AAC /* Home */,
 				5B88E04725C932BB00621C58 /* CommonView */,
 				5B88E03525C8EBA100621C58 /* Login&Register */,
@@ -662,9 +727,13 @@
 				5B7C20C5259D6B6E004A5E2D /* ModuleHeader.swift in Sources */,
 				5B88E04225C9255900621C58 /* JYBUserModel.swift in Sources */,
 				5B9D41E825C260C3002C97AE /* JYBNewsModel.swift in Sources */,
+				3B8FEBF527CC63BB0044AB8E /* MainServerClient.swift in Sources */,
+				3B8EB77827C8DBED00A42DAB /* MainNetworkAPI.swift in Sources */,
 				5B7C169525A2E31B00470E19 /* XMLParse.swift in Sources */,
 				5B8299C625BFB54A00623669 /* TestCViewController.swift in Sources */,
 				5B79544D25AEE175001274C2 /* JYBSettingViewController.swift in Sources */,
+				3B8EB77C27C8E07000A42DAB /* ServerModel.swift in Sources */,
+				3B8FEBF027CC61700044AB8E /* CloudServerAPI.swift in Sources */,
 				5B7C169825A2E64300470E19 /* Const.swift in Sources */,
 				5BE1FC2325B56B80004F077E /* JYBSegmentView.swift in Sources */,
 				5BBB92DA259C69F40024372B /* JYBNavigationController.swift in Sources */,
@@ -677,6 +746,8 @@
 				5B8299C925C0083D00623669 /* JYBWebViewController.swift in Sources */,
 				5B7E0AF225AD833C0006958C /* ControllerProtocol.swift in Sources */,
 				5B8D3E5F25C0FB3200EB328F /* ESRefreshAnimator.swift in Sources */,
+				3B8EB77E27C8E18500A42DAB /* ResponseBaseModel.swift in Sources */,
+				3B8EB77A27C8DDF100A42DAB /* MainNetworkClient1.swift in Sources */,
 				5B7C16A225A3138900470E19 /* TradeRequest.swift in Sources */,
 				5B79544425AE80ED001274C2 /* JYBCycleScrollView.swift in Sources */,
 				5B88E04525C9285B00621C58 /* JYBLoginClient.swift in Sources */,
@@ -685,10 +756,12 @@
 				5BBB92DE259C73B40024372B /* Theme.swift in Sources */,
 				5BB5DB2A25C3F3D500300EED /* JYBRefreshManager.swift in Sources */,
 				5BE1FC1E25B565A2004F077E /* JYBNewsViewController.swift in Sources */,
+				3B8FEBF927CC97ED0044AB8E /* UserServicePkgsModel.swift in Sources */,
 				5B7E0AF525AD8B830006958C /* JYBLoginOptionViewController.swift in Sources */,
 				5B998D16260CA4F000DAC08D /* HomeAppsBottomView.swift in Sources */,
 				5B8299C025BFB4E100623669 /* TestAViewController.swift in Sources */,
 				5B80EB89259C5F3600342C85 /* AppDelegate.swift in Sources */,
+				3B8FEBF727CC776C0044AB8E /* CloudServerClient.swift in Sources */,
 				5B7E0AF825AD9BC50006958C /* JYBInsetLabel.swift in Sources */,
 				5B88E04D25C9330400621C58 /* JYBUserNavigationBar.swift in Sources */,
 				5B7C20CA259DADF9004A5E2D /* TradeClient.swift in Sources */,
@@ -696,11 +769,14 @@
 				5B893F2E25AFD24C00B3F443 /* JYBThemeSettingViewController.swift in Sources */,
 				5B94FBB0260ADB6600610AAC /* HomeAppsVC.swift in Sources */,
 				5B94FBB5260AE53100610AAC /* HomeAppModel.swift in Sources */,
+				3B8FEBF327CC632E0044AB8E /* MainServerAPI.swift in Sources */,
 				5BBB92D6259C69860024372B /* Extension.swift in Sources */,
 				5B998C7B260C1EF600DAC08D /* MainServerNetworkManager.swift in Sources */,
 				5B8D3E4B25C0F44C00EB328F /* JYBNewsChannelViewController.swift in Sources */,
 				5B998C7E260C201300DAC08D /* MainNetworkClient.swift in Sources */,
 				5B8D3E6425C0FB3200EB328F /* ESRefreshFooterAnimator.swift in Sources */,
+				3B8FEBEC27CC5C580044AB8E /* JYBServerManager.swift in Sources */,
+				3B8EB77427C8B51600A42DAB /* WelcomeView.swift in Sources */,
 				5BB5DB2625C3EE5300300EED /* JYBRefreshHeaderAnimator.swift in Sources */,
 				5B7C20C2259D60BF004A5E2D /* JYBLayoutButton.swift in Sources */,
 				5B8D3E6025C0FB3200EB328F /* ESRefreshComponent.swift in Sources */,

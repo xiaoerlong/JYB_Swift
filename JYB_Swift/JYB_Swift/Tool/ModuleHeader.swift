@@ -13,5 +13,6 @@
 @_exported import Kingfisher
 @_exported import ReactiveSwift
 @_exported import ReactiveCocoa
+@_exported import Lottie
 //@_exported import RxSwift
 //@_exported import RxCocoa

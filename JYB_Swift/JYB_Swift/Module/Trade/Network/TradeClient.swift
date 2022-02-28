@@ -8,6 +8,7 @@
 /// 交易客户端
 import Foundation
 import CocoaAsyncSocket
+import CoreFoundation
 
 
 /// 交易对象
@@ -23,18 +24,59 @@ class TradeClient: NSObject {
     private var cocoaSocket: GCDAsyncSocket?
     private var connected: Bool = false
     private var connectTimer: Timer!
+    private var condition: NSCondition = NSCondition()
+    
+    private var inputStream: InputStream!
+    private var outputStream: OutputStream!
+    
 
     // 建立连接
     func cocoaSocketConnect() {
-        if connected {
-            return
+//        if connected {
+//            return
+//        }
+//        cocoaSocket = GCDAsyncSocket.init(delegate: self, delegateQueue: DispatchQueue.main)
+//        do {
+//            try cocoaSocket?.connect(toHost: "203.85.34.230", onPort: 10001, withTimeout: 20)
+//        } catch {
+//            print("连接失败:\(error)")
+//        }
+        
+        DispatchQueue.global().async {
+            // 开启另外一个线程连接socket
+            let thread = Thread.init { [self] in
+                
+                var readStream: Unmanaged<CFReadStream>?
+                var writeStream: Unmanaged<CFWriteStream>?
+                
+                CFStreamCreatePairWithSocketToHost(kCFAllocatorDefault, "203.85.34.230" as CFString, 10001, &readStream, &writeStream)
+                
+                inputStream = readStream?.takeRetainedValue()
+                outputStream = writeStream?.takeRetainedValue()
+                
+                inputStream.delegate = self
+                
+                inputStream.schedule(in: .current, forMode: .common)
+                outputStream.schedule(in: .current, forMode: .common)
+                
+                inputStream.open()
+                outputStream.open()
+                
+                // pingpong
+                print("添加timer pingpong")
+            }
+            thread.start()
+            
+            
+            self.condition.lock()
+            if self.condition.wait(until: Date.init(timeIntervalSinceNow: 15)) == false {
+                print("连接超时")
+                self.condition.unlock()
+            }
+            self.condition.unlock()
+            print("连接成功")
         }
-        cocoaSocket = GCDAsyncSocket.init(delegate: self, delegateQueue: DispatchQueue.main)
-        do {
-            try cocoaSocket?.connect(toHost: "203.85.34.230", onPort: 10001, withTimeout: 20)
-        } catch {
-            print("连接失败:\(error)")
-        }
+        
         
     }
     
@@ -48,6 +90,43 @@ class TradeClient: NSObject {
     func writeData(_ data: Data) {
         
     }
+}
+
+extension TradeClient: StreamDelegate {
+    func stream(_ aStream: Stream, handle eventCode: Stream.Event) {
+        if aStream == inputStream {
+            switch eventCode {
+            case .openCompleted:
+                readStreamOpenCompleted()
+            default:
+                print("some other event...")
+            }
+        } else if aStream == outputStream {
+            
+        }
+        switch eventCode {
+        case .hasBytesAvailable:
+            print("new message recceived")
+        case .endEncountered:
+            print("new message received 1")
+        case .errorOccurred:
+            print("error occurred")
+        case .hasSpaceAvailable:
+            print("has space available")
+        default:
+            print("some other event...")
+        }
+    }
+    
+    
+    private func readStreamOpenCompleted() {
+        print("readStreamOpenCompleted")
+        
+        condition.lock()
+        condition.signal()
+        condition.unlock()
+    }
+    
 }
 
 extension TradeClient {
