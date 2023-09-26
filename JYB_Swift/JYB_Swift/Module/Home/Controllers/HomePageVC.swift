@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HomePageVC: UIViewController {
+class HomePageVC: JYBBaseViewController {
     // MARK: Properties
     // view的整体
     private lazy var stackView: UIStackView = {
@@ -54,7 +54,7 @@ class HomePageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = AppTheme.manager.deepSkinBlackColor
+//        view.backgroundColor = AppTheme.manager.deepSkinBlackColor
 //        edgesForExtendedLayout = .all
 //        view.addSubview(stackView)
 //        stackView.snp.makeConstraints { (make) in
@@ -66,14 +66,28 @@ class HomePageVC: UIViewController {
 //        guard let url = JYBUserModel.default.profile?.head_url else {
 //            return
 //        }
-        let imageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: 32, height: 32))
-        imageView.image = JYBUserModel.default.avatarImage()
-//        imageView.kf.setImage(with: URL(string: url), placeholder: JYBUserModel.default.avatarImage())
+//        let imageView = UIImageView.init(frame: CGRect.init(x: 0, y: 0, width: 32, height: 32))
+//        imageView.image = JYBUserModel.default.avatarImage()
+//
+//        let leftItem = UIBarButtonItem.init(customView: imageView)
+//        navigationItem.leftBarButtonItem = leftItem
         
-        let leftItem = UIBarButtonItem.init(customView: imageView)
-        navigationItem.leftBarButtonItem = leftItem
+        view.backgroundColor = .green
+        addNavBar2()
+        
+        let btn = UIButton.init(type: .custom)
+        btn.setTitle("push", for: .normal)
+        btn.setTitleColor(.black, for: .normal)
+        btn.backgroundColor = .red
+        btn.addTarget(self, action: #selector(pushAction), for: .touchUpInside)
+        view.addSubview(btn)
+        btn.snp.makeConstraints { make in
+            make.center.equalTo(view)
+        }
     }
     
-
+    @objc private func pushAction() {
+        navigationController?.pushViewController(JYBTwoViewController(), animated: true)
+    }
     
 }

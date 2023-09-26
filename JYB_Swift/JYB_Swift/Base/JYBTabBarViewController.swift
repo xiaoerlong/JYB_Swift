@@ -28,32 +28,7 @@ class JYBTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        // 将请求数据转为xml
-//        let parse = XMLParse()
-//        parse.parseXML()
-        
-        let condition = NSCondition()
-        DispatchQueue.global().async {
-            condition.lock()
-            while self.products.count == 0 {
-                print("wait for product")
-                condition.wait()
-            }
-            self.products.remove(at: 0)
-            print("custom a product")
-            condition.lock()
-        }
-        
-        DispatchQueue.global().async {
-            condition.lock()
-            self.products.append(NSObject())
-            print("produce a product")
-            condition.signal()
-            condition.unlock()
-        }
-
-        
+ 
         viewControllers = [
             createViewControllers(Item(title: "首页", normalImage: "selectStock", selectedImage: "selectStock_selected"), HomePageVC()),
             createViewControllers(Item(title: "报价", normalImage: "market", selectedImage: "market_selected")),
@@ -62,6 +37,12 @@ class JYBTabBarViewController: UITabBarController {
             createViewControllers(Item(title: "交易", normalImage: "trade", selectedImage: "trade_selected"), JYBTradeViewController()),
         ]
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        configFlex()
+    }
 
     private func createViewControllers(_ item: Item, _ controller: UIViewController = UIViewController()) -> UIViewController {
         let nav = JYBNavigationController.init(rootViewController: controller)
@@ -69,5 +50,15 @@ class JYBTabBarViewController: UITabBarController {
         nav.tabBarItem.image = UIImage.init(named: item.normalImage)?.withRenderingMode(.alwaysOriginal)
         nav.tabBarItem.selectedImage = UIImage.init(named: item.selectedImage)?.withRenderingMode(.alwaysOriginal)
         return nav
+    }
+    
+    private func configFlex() {
+        let floatView = JYBFloatView.init(CGRect.init(x: 0, y: 200, width: 50, height: 50), imageName: "FLEX", imagesAndTitle: nil, bgColor: .gray, animationColor: nil)
+        floatView.clickBlocks = { i in
+            FLEXManager.shared.showExplorer()
+        }
+        if let window = UIApplication.shared.delegate?.window {
+            window?.addSubview(floatView)
+        }
     }
 }

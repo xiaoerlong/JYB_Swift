@@ -7,7 +7,6 @@
 
 import UIKit
 
-@main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -81,7 +80,9 @@ extension AppDelegate {
     
     // 开启用户操作监听
     private func addTimerWhenAppDidLaunch() {
-        
+        if JYBApplication.shared.responds(to: Selector.init(("resetIdelTimer"))) {
+            JYBApplication.shared.perform(Selector.init(("resetIdelTimer")))
+        }
     }
 }
 
@@ -89,8 +90,8 @@ extension AppDelegate {
 extension AppDelegate {
     private func initAppEnvironment() {
         setupRootWindow()
-        requestServerList()
-        requestUserLoginInfo()
+//        requestServerList()
+//        requestUserLoginInfo()
         displayAppIntroduceView()
         
 
@@ -101,8 +102,8 @@ extension AppDelegate {
     private func setupRootWindow() {
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-//        window?.rootViewController = JYBNavigationController.init(rootViewController: JYBTradeLoginViewController())
-        window?.rootViewController = JYBTabBarViewController()
+        window?.rootViewController = JYBNavigationController.init(rootViewController: JYBTradeLoginViewController())
+//        window?.rootViewController = TestViewController()
         window?.makeKeyAndVisible()
     }
     
@@ -134,7 +135,7 @@ extension AppDelegate {
         guard let window = window else { return }
         let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
         guard let currentVersion = currentVersion else { return }
-        if let AppVersion = UserDefaults.standard.value(forKey: "AppVersion") as? String, currentVersion >= AppVersion {
+        if let AppVersion = UserDefaults.standard.value(forKey: "AppVersion") as? String, currentVersion > AppVersion {
             UserDefaults.standard.setValue(false, forKey: WelcomeView.kWelcomeString)
         }
         if UserDefaults.standard.bool(forKey: WelcomeView.kWelcomeString) {

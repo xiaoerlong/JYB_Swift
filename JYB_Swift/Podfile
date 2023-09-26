@@ -1,18 +1,22 @@
-platform :ios, '10.0'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '12.0'
 use_frameworks!
 
 target 'JYB_Swift' do
+  pod 'SwiftyRSA' # RSA加密
+  pod 'XMLCoder', '~> 0.14.0' #xml 编码和解码库
+  pod 'SwiftEntryKit', '2.0.0' # 弹出框
+  
   pod 'Kingfisher'
   pod 'SnapKit', '~> 5.0.0'
   pod 'CocoaAsyncSocket'
   pod 'Moya', '~> 14.0'
   pod 'ObjectMapper'
-#  pod 'Socket.IO-Client-Swift', '~> 15.2.0'
-  pod 'RxSwift', '6.0.0-rc.2'
-  pod 'RxCocoa', '6.0.0-rc.2'
+  pod 'RxSwift', '6.5.0'
+  pod 'RxCocoa', '6.5.0'
   pod 'HandyJSON', '~> 5.0.2'
-  pod 'XMLMapper'
-  pod 'YYKit'
+  pod 'YYKit', git: 'https://github.com/SAGESSE-CN/YYKit.git'
   pod 'ReactiveCocoa', '~> 10.1'
   pod 'lottie-ios'
+  pod 'FLEX', :configurations => ['Debug']
 end

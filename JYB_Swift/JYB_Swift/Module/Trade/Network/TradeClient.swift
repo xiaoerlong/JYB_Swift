@@ -176,52 +176,6 @@ extension TradeClient {
         if connected == false {
             cocoaSocketConnect()
         }
-        // 将对象转为xml字符串
-        let loginRequest = LoginRequest()
-        loginRequest.msgnum = 999
-        
-        guard let xmlString = loginRequest.toXMLString() else {
-            print("模型转换成xml失败")
-            return
-        }
-        print("xmlString:\(xmlString)")
-//        let cxml = xmlString.utf8CString
-//        let xmlLen = cxml.count
-//        var data = NSMutableData()
-        // MDPHead + XMLHead + int + XML
-        var pkgSize = MemoryLayout<CInt>.size + MemoryLayout<CShort>.size + MemoryLayout<CInt>.size
-        
-        var mdpHead = MDPHead(pkgSize: 0, type: 0)
-        mdpHead.type = 31303
-        mdpHead.pkgSize = CInt(pkgSize)
-        let mdpHeadData = Data(bytes: &mdpHead, count: MemoryLayout.size(ofValue: mdpHead))
-        
-        var xmlHead = XMLHead(pkgSize: 0, type: 0)
-        xmlHead.type = 51000
-        xmlHead.pkgSize = CInt(pkgSize)
-        let xmlHeadData = Data(bytes: &xmlHead, count: MemoryLayout.size(ofValue: xmlHead))
-        
-        
-        
-        var xmlLen = xmlString.count
-        
-        var data = Data()
-        let pkgSizeData = Data(bytes: &pkgSize, count: MemoryLayout.size(ofValue: pkgSize))
-        data.append(pkgSizeData)
-        
-        var msgTp: CUnsignedShort = 51000
-        let msgTpData = Data(bytes: &msgTp, count: MemoryLayout.size(ofValue: msgTp))
-        data.append(msgTpData)
-        
-        
-        let xmlLenData = Data(bytes: &xmlLen, count: MemoryLayout.size(ofValue: xmlLen))
-        data.append(xmlLenData)
-        
-        var cXML = xmlString.utf8CString
-        let cXMLData = Data(bytes: &cXML, count: MemoryLayout.size(ofValue: cXML))
-        data.append(cXMLData)
-        
-        cocoaSocket?.write(data, withTimeout: 20, tag: loginRequest.msgnum)
     }
 }
 

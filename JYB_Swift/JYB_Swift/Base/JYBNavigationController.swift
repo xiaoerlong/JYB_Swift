@@ -12,22 +12,22 @@ class JYBNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.themeChangedHandler = { [unowned self] in
-            // navigationBar背景颜色
-            self.navigationBar.setBackgroundImage(AppTheme.manager.navigationBarBackgroundImage, for: .default)
-        }
-        
-        // navigationBar中间title颜色
-        navigationBar.titleTextAttributes = [
-            NSAttributedString.Key.foregroundColor: UIColor.white,
-            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)
-        ]
-        // navigationBar上item颜色
-        navigationBar.tintColor = UIColor.white
-        // navigationBar下划线颜色
-        navigationBar.shadowImage = UIImage()
-        // navigationBar不透明
-        navigationBar.isTranslucent = false
+//        self.themeChangedHandler = { [unowned self] in
+//            // navigationBar背景颜色
+//            self.navigationBar.setBackgroundImage(AppTheme.manager.navigationBarBackgroundImage, for: .default)
+//        }
+//
+//        // navigationBar中间title颜色
+//        navigationBar.titleTextAttributes = [
+//            NSAttributedString.Key.foregroundColor: UIColor.white,
+//            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 18)
+//        ]
+//        // navigationBar上item颜色
+//        navigationBar.tintColor = UIColor.white
+//        // navigationBar下划线颜色
+//        navigationBar.shadowImage = UIImage()
+//        // navigationBar不透明
+//        navigationBar.isTranslucent = false
     }
     
     // 状态栏颜色
@@ -37,25 +37,16 @@ class JYBNavigationController: UINavigationController {
 }
 
 extension JYBNavigationController: UINavigationControllerDelegate {
-    func navigationController(_ navigationController: UINavigationController, didShow viewController: UIViewController, animated: Bool) {
-        
-    }
-    
-    // 拦截跳转事件
+    /**
+     重写 pushViewController 方法，不修改 pushViewController 的逻辑
+     仅在跳转前，判断目标 VC 是否为一级页面还是二级页面，通过 viewControllers.count 来判断：
+     viewControllers.count > 0，那么目标 VC 肯定是第二个页面（即二级页面）；我们就添加上 hidesBottomBarWhenPushed = true
+     */
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
         if children.count > 0 {
             viewController.hidesBottomBarWhenPushed = true
         }
         
-        // 修改backItem
-        if children.count >= 1 {
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: UIImage.init(named: "popback"), style: .plain, target: self, action: #selector(tapBack))
-        }
-        
         super.pushViewController(viewController, animated: animated)
-    }
-    
-    @objc private func tapBack() {
-        popViewController(animated: true)
     }
 }
