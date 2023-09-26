@@ -12,6 +12,7 @@ class JYBUserModel: HandyJSON {
     var readSource: String?
     var session: String?
     var uid: String?
+    var userId: String?
     var profile: Profile?
     var passport: HandyJSON?
     
@@ -21,6 +22,16 @@ class JYBUserModel: HandyJSON {
     required internal init() {}
     
     static let `default` = JYBUserModel()
+    
+    // 保存用户登录信息
+    func saveUserMessage() {
+        let userModel = JYBUserModel.default
+        userModel.clearUserMessage()
+        
+        userModel.session = session
+        userModel.userId = userId
+        // TODO: 赋值更多
+    }
     
     func clearUserMessage() {
         session = nil

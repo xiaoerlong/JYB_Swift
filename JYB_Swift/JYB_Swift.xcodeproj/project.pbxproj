@@ -3,17 +3,47 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B3515F52A7B86280056D3D1 /* libssl_supportAll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3515E42A7B86280056D3D1 /* libssl_supportAll.a */; };
+		3B3515F62A7B86290056D3D1 /* libcrypto_supportAll.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B3515EE2A7B86280056D3D1 /* libcrypto_supportAll.a */; };
+		3B6B3EE12A95EF4300A91566 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6B3EE02A95EF4300A91566 /* LoginModel.swift */; };
+		3B6B3EE42A96DFC800A91566 /* JYBTradeLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6B3EE32A96DFC800A91566 /* JYBTradeLoginViewModel.swift */; };
+		3B6B3FE02A97277A00A91566 /* JYBPSG2FAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6B3FDF2A97277A00A91566 /* JYBPSG2FAView.swift */; };
+		3B6B3FE22A97278500A91566 /* JYBPSG2FAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B6B3FE12A97278500A91566 /* JYBPSG2FAView.xib */; };
+		3B7E8C382A7B9F46001F7C1A /* WrapperEVP.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E8C372A7B9F46001F7C1A /* WrapperEVP.mm */; };
+		3B7E8C3C2A7BA76C001F7C1A /* WrapperRSA.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E8C3B2A7BA76C001F7C1A /* WrapperRSA.mm */; };
+		3B7E8C3F2A7BA79F001F7C1A /* ClientSecurityMng.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E8C3E2A7BA79F001F7C1A /* ClientSecurityMng.mm */; settings = {COMPILER_FLAGS = "-fcxx-modules"; }; };
+		3B7E8C5E2A7CC5F8001F7C1A /* ClientSecurityMngWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E8C5D2A7CC5F8001F7C1A /* ClientSecurityMngWrapper.m */; };
+		3B8ADFA62AC2ACDF009A45B7 /* TradeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8ADFA52AC2ACDF009A45B7 /* TradeResult.swift */; };
+		3B8ADFA82AC2C9D7009A45B7 /* TradeUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8ADFA72AC2C9D7009A45B7 /* TradeUserModel.swift */; };
+		3B8B525F27CDB7E000D2F089 /* JYBFloatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8B525E27CDB7E000D2F089 /* JYBFloatView.swift */; };
+		3B8EB77427C8B51600A42DAB /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB77327C8B51600A42DAB /* WelcomeView.swift */; };
+		3B8EB77827C8DBED00A42DAB /* MainNetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB77727C8DBED00A42DAB /* MainNetworkAPI.swift */; };
+		3B8EB77A27C8DDF100A42DAB /* MainNetworkClient1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB77927C8DDF100A42DAB /* MainNetworkClient1.swift */; };
+		3B8EB77C27C8E07000A42DAB /* ServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB77B27C8E07000A42DAB /* ServerModel.swift */; };
+		3B8EB77E27C8E18500A42DAB /* ResponseBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8EB77D27C8E18500A42DAB /* ResponseBaseModel.swift */; };
+		3B8FEBEC27CC5C580044AB8E /* JYBServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBEB27CC5C580044AB8E /* JYBServerManager.swift */; };
+		3B8FEBF027CC61700044AB8E /* CloudServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBEF27CC61700044AB8E /* CloudServerAPI.swift */; };
+		3B8FEBF327CC632E0044AB8E /* MainServerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBF227CC632E0044AB8E /* MainServerAPI.swift */; };
+		3B8FEBF527CC63BB0044AB8E /* MainServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBF427CC63BB0044AB8E /* MainServerClient.swift */; };
+		3B8FEBF727CC776C0044AB8E /* CloudServerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBF627CC776C0044AB8E /* CloudServerClient.swift */; };
+		3B8FEBF927CC97ED0044AB8E /* UserServicePkgsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBF827CC97ED0044AB8E /* UserServicePkgsModel.swift */; };
+		3B8FEBFB27CCA0B70044AB8E /* JYBApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBFA27CCA0B70044AB8E /* JYBApplication.swift */; };
+		3B8FEBFD27CCA6620044AB8E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBFC27CCA6620044AB8E /* main.swift */; };
+		3B8FEBFF27CCAC9A0044AB8E /* JYBNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEBFE27CCAC9A0044AB8E /* JYBNavigationBar.swift */; };
+		3B8FEC0127CCB0880044AB8E /* JYBBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEC0027CCB0880044AB8E /* JYBBaseViewController.swift */; };
+		3B8FEC0327CCB29F0044AB8E /* JYBTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8FEC0227CCB29F0044AB8E /* JYBTwoViewController.swift */; };
+		3BB7A6E32A8A30C100584194 /* ClientComm.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E8C602A7CED15001F7C1A /* ClientComm.mm */; };
+		3BBBDACE2A9765DB0016345B /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBBDACD2A9765DB0016345B /* UIView+Extensions.swift */; };
+		3BBBDAD02A9766F70016345B /* Object+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BBBDACF2A9766F70016345B /* Object+ClassName.swift */; };
 		5B79544425AE80ED001274C2 /* JYBCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79544325AE80ED001274C2 /* JYBCycleScrollView.swift */; };
 		5B79544D25AEE175001274C2 /* JYBSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B79544C25AEE175001274C2 /* JYBSettingViewController.swift */; };
 		5B7BD66E25B194F9000F2598 /* JYBSettingItemControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7BD66D25B194F9000F2598 /* JYBSettingItemControl.swift */; };
-		5B7C169525A2E31B00470E19 /* XMLParse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C169425A2E31B00470E19 /* XMLParse.swift */; };
 		5B7C169825A2E64300470E19 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C169725A2E64300470E19 /* Const.swift */; };
 		5B7C169B25A3089800470E19 /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 5B7C169A25A3089800470E19 /* test.xml */; };
-		5B7C16A225A3138900470E19 /* TradeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C16A125A3138900470E19 /* TradeRequest.swift */; };
 		5B7C20C2259D60BF004A5E2D /* JYBLayoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C20C1259D60BF004A5E2D /* JYBLayoutButton.swift */; };
 		5B7C20C5259D6B6E004A5E2D /* ModuleHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C20C4259D6B6E004A5E2D /* ModuleHeader.swift */; };
 		5B7C20CA259DADF9004A5E2D /* TradeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7C20C9259DADF9004A5E2D /* TradeClient.swift */; };
@@ -35,7 +65,6 @@
 		5B88E03E25C8F8E600621C58 /* JYBLoginNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E03D25C8F8E600621C58 /* JYBLoginNetwork.swift */; };
 		5B88E04225C9255900621C58 /* JYBUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04125C9255900621C58 /* JYBUserModel.swift */; };
 		5B88E04525C9285B00621C58 /* JYBLoginClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04425C9285B00621C58 /* JYBLoginClient.swift */; };
-		5B88E04925C932E600621C58 /* JYBNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04825C932E600621C58 /* JYBNavigationBar.swift */; };
 		5B88E04D25C9330400621C58 /* JYBUserNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E04C25C9330400621C58 /* JYBUserNavigationBar.swift */; };
 		5B893F2E25AFD24C00B3F443 /* JYBThemeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B893F2D25AFD24C00B3F443 /* JYBThemeSettingViewController.swift */; };
 		5B8D3E4B25C0F44C00EB328F /* JYBNewsChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E4A25C0F44C00EB328F /* JYBNewsChannelViewController.swift */; };
@@ -51,7 +80,6 @@
 		5B8D3E6725C0FB3200EB328F /* ESPullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E5D25C0FB3200EB328F /* ESPullToRefresh.swift */; };
 		5B8D3E6B25C1165A00EB328F /* JYBNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8D3E6A25C1165A00EB328F /* JYBNetworkClient.swift */; };
 		5B904F81260D71CD00A9795F /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B904F80260D71CD00A9795F /* AppManager.swift */; };
-		5B92CEBE25ABFC5400605249 /* TradeCommClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B92CEBD25ABFC5400605249 /* TradeCommClient.swift */; };
 		5B94FBB0260ADB6600610AAC /* HomeAppsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94FBAF260ADB6600610AAC /* HomeAppsVC.swift */; };
 		5B94FBB5260AE53100610AAC /* HomeAppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B94FBB4260AE53100610AAC /* HomeAppModel.swift */; };
 		5B998C7B260C1EF600DAC08D /* MainServerNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B998C7A260C1EF600DAC08D /* MainServerNetworkManager.swift */; };
@@ -76,14 +104,125 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B3515522A7B51010056D3D1 /* JYB_Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JYB_Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B3515AC2A7B86280056D3D1 /* pem2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem2.h; sourceTree = "<group>"; };
+		3B3515AD2A7B86280056D3D1 /* pem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pem.h; sourceTree = "<group>"; };
+		3B3515AE2A7B86280056D3D1 /* md2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md2.h; sourceTree = "<group>"; };
+		3B3515AF2A7B86280056D3D1 /* ssl3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl3.h; sourceTree = "<group>"; };
+		3B3515B02A7B86280056D3D1 /* ossl_typ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ossl_typ.h; sourceTree = "<group>"; };
+		3B3515B12A7B86280056D3D1 /* dtls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dtls1.h; sourceTree = "<group>"; };
+		3B3515B22A7B86280056D3D1 /* err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = err.h; sourceTree = "<group>"; };
+		3B3515B32A7B86280056D3D1 /* bn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bn.h; sourceTree = "<group>"; };
+		3B3515B42A7B86280056D3D1 /* blowfish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blowfish.h; sourceTree = "<group>"; };
+		3B3515B52A7B86280056D3D1 /* engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = engine.h; sourceTree = "<group>"; };
+		3B3515B62A7B86280056D3D1 /* conf_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf_api.h; sourceTree = "<group>"; };
+		3B3515B72A7B86280056D3D1 /* x509.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509.h; sourceTree = "<group>"; };
+		3B3515B82A7B86280056D3D1 /* asn1_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1_mac.h; sourceTree = "<group>"; };
+		3B3515B92A7B86280056D3D1 /* ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui.h; sourceTree = "<group>"; };
+		3B3515BA2A7B86280056D3D1 /* kssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kssl.h; sourceTree = "<group>"; };
+		3B3515BB2A7B86280056D3D1 /* sha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha.h; sourceTree = "<group>"; };
+		3B3515BC2A7B86280056D3D1 /* symhacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = symhacks.h; sourceTree = "<group>"; };
+		3B3515BD2A7B86280056D3D1 /* asn1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1.h; sourceTree = "<group>"; };
+		3B3515BE2A7B86280056D3D1 /* opensslconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslconf.h; sourceTree = "<group>"; };
+		3B3515BF2A7B86280056D3D1 /* bio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bio.h; sourceTree = "<group>"; };
+		3B3515C02A7B86280056D3D1 /* rc2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc2.h; sourceTree = "<group>"; };
+		3B3515C12A7B86280056D3D1 /* dh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dh.h; sourceTree = "<group>"; };
+		3B3515C22A7B86280056D3D1 /* ui_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ui_compat.h; sourceTree = "<group>"; };
+		3B3515C32A7B86280056D3D1 /* x509v3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509v3.h; sourceTree = "<group>"; };
+		3B3515C42A7B86280056D3D1 /* ssl23.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl23.h; sourceTree = "<group>"; };
+		3B3515C52A7B86280056D3D1 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		3B3515C62A7B86280056D3D1 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		3B3515C72A7B86280056D3D1 /* x509_vfy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x509_vfy.h; sourceTree = "<group>"; };
+		3B3515C82A7B86280056D3D1 /* txt_db.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = txt_db.h; sourceTree = "<group>"; };
+		3B3515C92A7B86280056D3D1 /* safestack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = safestack.h; sourceTree = "<group>"; };
+		3B3515CA2A7B86280056D3D1 /* ecdsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdsa.h; sourceTree = "<group>"; };
+		3B3515CB2A7B86280056D3D1 /* objects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = objects.h; sourceTree = "<group>"; };
+		3B3515CC2A7B86280056D3D1 /* fips.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fips.h; sourceTree = "<group>"; };
+		3B3515CD2A7B86280056D3D1 /* pkcs12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs12.h; sourceTree = "<group>"; };
+		3B3515CE2A7B86280056D3D1 /* fips_rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fips_rand.h; sourceTree = "<group>"; };
+		3B3515CF2A7B86280056D3D1 /* crypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto.h; sourceTree = "<group>"; };
+		3B3515D02A7B86280056D3D1 /* opensslv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opensslv.h; sourceTree = "<group>"; };
+		3B3515D12A7B86280056D3D1 /* pkcs7.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pkcs7.h; sourceTree = "<group>"; };
+		3B3515D22A7B86280056D3D1 /* obj_mac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = obj_mac.h; sourceTree = "<group>"; };
+		3B3515D32A7B86280056D3D1 /* tmdiff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmdiff.h; sourceTree = "<group>"; };
+		3B3515D42A7B86280056D3D1 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		3B3515D52A7B86280056D3D1 /* ssl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl.h; sourceTree = "<group>"; };
+		3B3515D62A7B86280056D3D1 /* evp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = evp.h; sourceTree = "<group>"; };
+		3B3515D72A7B86280056D3D1 /* e_os2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = e_os2.h; sourceTree = "<group>"; };
+		3B3515D82A7B86280056D3D1 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md4.h; sourceTree = "<group>"; };
+		3B3515D92A7B86280056D3D1 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		3B3515DA2A7B86280056D3D1 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		3B3515DB2A7B86280056D3D1 /* comp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = comp.h; sourceTree = "<group>"; };
+		3B3515DC2A7B86280056D3D1 /* cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cast.h; sourceTree = "<group>"; };
+		3B3515DD2A7B86280056D3D1 /* rc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rc4.h; sourceTree = "<group>"; };
+		3B3515DE2A7B86280056D3D1 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		3B3515DF2A7B86280056D3D1 /* des.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des.h; sourceTree = "<group>"; };
+		3B3515E02A7B86280056D3D1 /* ocsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ocsp.h; sourceTree = "<group>"; };
+		3B3515E12A7B86280056D3D1 /* ec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ec.h; sourceTree = "<group>"; };
+		3B3515E22A7B86280056D3D1 /* ecdh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ecdh.h; sourceTree = "<group>"; };
+		3B3515E32A7B86280056D3D1 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		3B3515E42A7B86280056D3D1 /* libssl_supportAll.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libssl_supportAll.a; sourceTree = "<group>"; };
+		3B3515E52A7B86280056D3D1 /* pqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pqueue.h; sourceTree = "<group>"; };
+		3B3515E62A7B86280056D3D1 /* dso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dso.h; sourceTree = "<group>"; };
+		3B3515E72A7B86280056D3D1 /* ssl2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ssl2.h; sourceTree = "<group>"; };
+		3B3515E82A7B86280056D3D1 /* rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rsa.h; sourceTree = "<group>"; };
+		3B3515E92A7B86280056D3D1 /* krb5_asn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = krb5_asn.h; sourceTree = "<group>"; };
+		3B3515EA2A7B86280056D3D1 /* des_old.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = des_old.h; sourceTree = "<group>"; };
+		3B3515EB2A7B86280056D3D1 /* ripemd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ripemd.h; sourceTree = "<group>"; };
+		3B3515EC2A7B86280056D3D1 /* tls1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tls1.h; sourceTree = "<group>"; };
+		3B3515ED2A7B86280056D3D1 /* dsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dsa.h; sourceTree = "<group>"; };
+		3B3515EE2A7B86280056D3D1 /* libcrypto_supportAll.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcrypto_supportAll.a; sourceTree = "<group>"; };
+		3B3515EF2A7B86280056D3D1 /* asn1t.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asn1t.h; sourceTree = "<group>"; };
+		3B3515F02A7B86280056D3D1 /* ebcdic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ebcdic.h; sourceTree = "<group>"; };
+		3B3515F12A7B86280056D3D1 /* store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = store.h; sourceTree = "<group>"; };
+		3B3515F22A7B86280056D3D1 /* idea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = idea.h; sourceTree = "<group>"; };
+		3B3515F32A7B86280056D3D1 /* lhash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lhash.h; sourceTree = "<group>"; };
+		3B3515F42A7B86280056D3D1 /* pq_compat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pq_compat.h; sourceTree = "<group>"; };
+		3B3515F72A7B86F60056D3D1 /* WrapperEVP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapperEVP.h; sourceTree = "<group>"; };
+		3B6B3EE02A95EF4300A91566 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		3B6B3EE32A96DFC800A91566 /* JYBTradeLoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBTradeLoginViewModel.swift; sourceTree = "<group>"; };
+		3B6B3FDF2A97277A00A91566 /* JYBPSG2FAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBPSG2FAView.swift; sourceTree = "<group>"; };
+		3B6B3FE12A97278500A91566 /* JYBPSG2FAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JYBPSG2FAView.xib; sourceTree = "<group>"; };
+		3B7E8C372A7B9F46001F7C1A /* WrapperEVP.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WrapperEVP.mm; sourceTree = "<group>"; };
+		3B7E8C392A7BA57E001F7C1A /* StandDataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StandDataType.h; sourceTree = "<group>"; };
+		3B7E8C3A2A7BA76C001F7C1A /* WrapperRSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WrapperRSA.h; sourceTree = "<group>"; };
+		3B7E8C3B2A7BA76C001F7C1A /* WrapperRSA.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WrapperRSA.mm; sourceTree = "<group>"; };
+		3B7E8C3D2A7BA79F001F7C1A /* ClientSecurityMng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSecurityMng.h; sourceTree = "<group>"; };
+		3B7E8C3E2A7BA79F001F7C1A /* ClientSecurityMng.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ClientSecurityMng.mm; sourceTree = "<group>"; };
+		3B7E8C402A7BA7B6001F7C1A /* MarketDataProtocol_CMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketDataProtocol_CMS.h; sourceTree = "<group>"; };
+		3B7E8C412A7BA7FD001F7C1A /* MarketDataProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarketDataProtocol.h; sourceTree = "<group>"; };
+		3B7E8C522A7C9466001F7C1A /* STTradeCommProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTradeCommProtocol.h; sourceTree = "<group>"; };
+		3B7E8C5C2A7CC5F8001F7C1A /* ClientSecurityMngWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientSecurityMngWrapper.h; sourceTree = "<group>"; };
+		3B7E8C5D2A7CC5F8001F7C1A /* ClientSecurityMngWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClientSecurityMngWrapper.m; sourceTree = "<group>"; };
+		3B7E8C5F2A7CED15001F7C1A /* ClientComm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientComm.h; sourceTree = "<group>"; };
+		3B7E8C602A7CED15001F7C1A /* ClientComm.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ClientComm.mm; sourceTree = "<group>"; };
+		3B8ADFA52AC2ACDF009A45B7 /* TradeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeResult.swift; sourceTree = "<group>"; };
+		3B8ADFA72AC2C9D7009A45B7 /* TradeUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeUserModel.swift; sourceTree = "<group>"; };
+		3B8B525E27CDB7E000D2F089 /* JYBFloatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBFloatView.swift; sourceTree = "<group>"; };
+		3B8EB77327C8B51600A42DAB /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		3B8EB77727C8DBED00A42DAB /* MainNetworkAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNetworkAPI.swift; sourceTree = "<group>"; };
+		3B8EB77927C8DDF100A42DAB /* MainNetworkClient1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNetworkClient1.swift; sourceTree = "<group>"; };
+		3B8EB77B27C8E07000A42DAB /* ServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModel.swift; sourceTree = "<group>"; };
+		3B8EB77D27C8E18500A42DAB /* ResponseBaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseBaseModel.swift; sourceTree = "<group>"; };
+		3B8FEBEB27CC5C580044AB8E /* JYBServerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBServerManager.swift; sourceTree = "<group>"; };
+		3B8FEBEF27CC61700044AB8E /* CloudServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudServerAPI.swift; sourceTree = "<group>"; };
+		3B8FEBF227CC632E0044AB8E /* MainServerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServerAPI.swift; sourceTree = "<group>"; };
+		3B8FEBF427CC63BB0044AB8E /* MainServerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServerClient.swift; sourceTree = "<group>"; };
+		3B8FEBF627CC776C0044AB8E /* CloudServerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudServerClient.swift; sourceTree = "<group>"; };
+		3B8FEBF827CC97ED0044AB8E /* UserServicePkgsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserServicePkgsModel.swift; sourceTree = "<group>"; };
+		3B8FEBFA27CCA0B70044AB8E /* JYBApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBApplication.swift; sourceTree = "<group>"; };
+		3B8FEBFC27CCA6620044AB8E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3B8FEBFE27CCAC9A0044AB8E /* JYBNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNavigationBar.swift; sourceTree = "<group>"; };
+		3B8FEC0027CCB0880044AB8E /* JYBBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBBaseViewController.swift; sourceTree = "<group>"; };
+		3B8FEC0227CCB29F0044AB8E /* JYBTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBTwoViewController.swift; sourceTree = "<group>"; };
+		3BBBDACD2A9765DB0016345B /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		3BBBDACF2A9766F70016345B /* Object+ClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object+ClassName.swift"; sourceTree = "<group>"; };
 		40D3E7E5580A9051BC0D81B7 /* Pods-JYB_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JYB_Swift.release.xcconfig"; path = "Target Support Files/Pods-JYB_Swift/Pods-JYB_Swift.release.xcconfig"; sourceTree = "<group>"; };
 		5B79544325AE80ED001274C2 /* JYBCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBCycleScrollView.swift; sourceTree = "<group>"; };
 		5B79544C25AEE175001274C2 /* JYBSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBSettingViewController.swift; sourceTree = "<group>"; };
 		5B7BD66D25B194F9000F2598 /* JYBSettingItemControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBSettingItemControl.swift; sourceTree = "<group>"; };
-		5B7C169425A2E31B00470E19 /* XMLParse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParse.swift; sourceTree = "<group>"; };
 		5B7C169725A2E64300470E19 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		5B7C169A25A3089800470E19 /* test.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
-		5B7C16A125A3138900470E19 /* TradeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRequest.swift; sourceTree = "<group>"; };
 		5B7C20C1259D60BF004A5E2D /* JYBLayoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLayoutButton.swift; sourceTree = "<group>"; };
 		5B7C20C4259D6B6E004A5E2D /* ModuleHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleHeader.swift; sourceTree = "<group>"; };
 		5B7C20C9259DADF9004A5E2D /* TradeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeClient.swift; sourceTree = "<group>"; };
@@ -107,7 +246,6 @@
 		5B88E03D25C8F8E600621C58 /* JYBLoginNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLoginNetwork.swift; sourceTree = "<group>"; };
 		5B88E04125C9255900621C58 /* JYBUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBUserModel.swift; sourceTree = "<group>"; };
 		5B88E04425C9285B00621C58 /* JYBLoginClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBLoginClient.swift; sourceTree = "<group>"; };
-		5B88E04825C932E600621C58 /* JYBNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNavigationBar.swift; sourceTree = "<group>"; };
 		5B88E04C25C9330400621C58 /* JYBUserNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBUserNavigationBar.swift; sourceTree = "<group>"; };
 		5B893F2D25AFD24C00B3F443 /* JYBThemeSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBThemeSettingViewController.swift; sourceTree = "<group>"; };
 		5B8D3E4A25C0F44C00EB328F /* JYBNewsChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNewsChannelViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +263,6 @@
 		5B8D3E5D25C0FB3200EB328F /* ESPullToRefresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ESPullToRefresh.swift; sourceTree = "<group>"; };
 		5B8D3E6A25C1165A00EB328F /* JYBNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JYBNetworkClient.swift; sourceTree = "<group>"; };
 		5B904F80260D71CD00A9795F /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
-		5B92CEBD25ABFC5400605249 /* TradeCommClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeCommClient.swift; sourceTree = "<group>"; };
 		5B94FBAF260ADB6600610AAC /* HomeAppsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppsVC.swift; sourceTree = "<group>"; };
 		5B94FBB4260AE53100610AAC /* HomeAppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAppModel.swift; sourceTree = "<group>"; };
 		5B998C7A260C1EF600DAC08D /* MainServerNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainServerNetworkManager.swift; sourceTree = "<group>"; };
@@ -155,6 +292,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B3515F62A7B86290056D3D1 /* libcrypto_supportAll.a in Frameworks */,
+				3B3515F52A7B86280056D3D1 /* libssl_supportAll.a in Frameworks */,
 				5B998C94260C782900DAC08D /* Pods_JYB_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,6 +301,178 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B3515AB2A7B86280056D3D1 /* openssl */ = {
+			isa = PBXGroup;
+			children = (
+				3B3515AC2A7B86280056D3D1 /* pem2.h */,
+				3B3515AD2A7B86280056D3D1 /* pem.h */,
+				3B3515AE2A7B86280056D3D1 /* md2.h */,
+				3B3515AF2A7B86280056D3D1 /* ssl3.h */,
+				3B3515B02A7B86280056D3D1 /* ossl_typ.h */,
+				3B3515B12A7B86280056D3D1 /* dtls1.h */,
+				3B3515B22A7B86280056D3D1 /* err.h */,
+				3B3515B32A7B86280056D3D1 /* bn.h */,
+				3B3515B42A7B86280056D3D1 /* blowfish.h */,
+				3B3515B52A7B86280056D3D1 /* engine.h */,
+				3B3515B62A7B86280056D3D1 /* conf_api.h */,
+				3B3515B72A7B86280056D3D1 /* x509.h */,
+				3B3515B82A7B86280056D3D1 /* asn1_mac.h */,
+				3B3515B92A7B86280056D3D1 /* ui.h */,
+				3B3515BA2A7B86280056D3D1 /* kssl.h */,
+				3B3515BB2A7B86280056D3D1 /* sha.h */,
+				3B3515BC2A7B86280056D3D1 /* symhacks.h */,
+				3B3515BD2A7B86280056D3D1 /* asn1.h */,
+				3B3515BE2A7B86280056D3D1 /* opensslconf.h */,
+				3B3515BF2A7B86280056D3D1 /* bio.h */,
+				3B3515C02A7B86280056D3D1 /* rc2.h */,
+				3B3515C12A7B86280056D3D1 /* dh.h */,
+				3B3515C22A7B86280056D3D1 /* ui_compat.h */,
+				3B3515C32A7B86280056D3D1 /* x509v3.h */,
+				3B3515C42A7B86280056D3D1 /* ssl23.h */,
+				3B3515C52A7B86280056D3D1 /* conf.h */,
+				3B3515C62A7B86280056D3D1 /* md5.h */,
+				3B3515C72A7B86280056D3D1 /* x509_vfy.h */,
+				3B3515C82A7B86280056D3D1 /* txt_db.h */,
+				3B3515C92A7B86280056D3D1 /* safestack.h */,
+				3B3515CA2A7B86280056D3D1 /* ecdsa.h */,
+				3B3515CB2A7B86280056D3D1 /* objects.h */,
+				3B3515CC2A7B86280056D3D1 /* fips.h */,
+				3B3515CD2A7B86280056D3D1 /* pkcs12.h */,
+				3B3515CE2A7B86280056D3D1 /* fips_rand.h */,
+				3B3515CF2A7B86280056D3D1 /* crypto.h */,
+				3B3515D02A7B86280056D3D1 /* opensslv.h */,
+				3B3515D12A7B86280056D3D1 /* pkcs7.h */,
+				3B3515D22A7B86280056D3D1 /* obj_mac.h */,
+				3B3515D32A7B86280056D3D1 /* tmdiff.h */,
+				3B3515D42A7B86280056D3D1 /* buffer.h */,
+				3B3515D52A7B86280056D3D1 /* ssl.h */,
+				3B3515D62A7B86280056D3D1 /* evp.h */,
+				3B3515D72A7B86280056D3D1 /* e_os2.h */,
+				3B3515D82A7B86280056D3D1 /* md4.h */,
+				3B3515D92A7B86280056D3D1 /* hmac.h */,
+				3B3515DA2A7B86280056D3D1 /* aes.h */,
+				3B3515DB2A7B86280056D3D1 /* comp.h */,
+				3B3515DC2A7B86280056D3D1 /* cast.h */,
+				3B3515DD2A7B86280056D3D1 /* rc4.h */,
+				3B3515DE2A7B86280056D3D1 /* stack.h */,
+				3B3515DF2A7B86280056D3D1 /* des.h */,
+				3B3515E02A7B86280056D3D1 /* ocsp.h */,
+				3B3515E12A7B86280056D3D1 /* ec.h */,
+				3B3515E22A7B86280056D3D1 /* ecdh.h */,
+				3B3515E32A7B86280056D3D1 /* rand.h */,
+				3B3515E42A7B86280056D3D1 /* libssl_supportAll.a */,
+				3B3515E52A7B86280056D3D1 /* pqueue.h */,
+				3B3515E62A7B86280056D3D1 /* dso.h */,
+				3B3515E72A7B86280056D3D1 /* ssl2.h */,
+				3B3515E82A7B86280056D3D1 /* rsa.h */,
+				3B3515E92A7B86280056D3D1 /* krb5_asn.h */,
+				3B3515EA2A7B86280056D3D1 /* des_old.h */,
+				3B3515EB2A7B86280056D3D1 /* ripemd.h */,
+				3B3515EC2A7B86280056D3D1 /* tls1.h */,
+				3B3515ED2A7B86280056D3D1 /* dsa.h */,
+				3B3515EE2A7B86280056D3D1 /* libcrypto_supportAll.a */,
+				3B3515EF2A7B86280056D3D1 /* asn1t.h */,
+				3B3515F02A7B86280056D3D1 /* ebcdic.h */,
+				3B3515F12A7B86280056D3D1 /* store.h */,
+				3B3515F22A7B86280056D3D1 /* idea.h */,
+				3B3515F32A7B86280056D3D1 /* lhash.h */,
+				3B3515F42A7B86280056D3D1 /* pq_compat.h */,
+			);
+			path = openssl;
+			sourceTree = "<group>";
+		};
+		3B6B3EE22A96DF8900A91566 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3B6B3EE32A96DFC800A91566 /* JYBTradeLoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3B6B3EE52A96E1FC00A91566 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B8ADFA72AC2C9D7009A45B7 /* TradeUserModel.swift */,
+				3B6B3EE02A95EF4300A91566 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B6B3EE62A96E4B200A91566 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BBB92D0259C66320024372B /* JYBTradeViewController.swift */,
+				5BF34B7C259C7DC700461E29 /* JYBTradeLoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3B6B3FDE2A970B0200A91566 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B6B3FDF2A97277A00A91566 /* JYBPSG2FAView.swift */,
+				3B6B3FE12A97278500A91566 /* JYBPSG2FAView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3B7E8C482A7C7F3A001F7C1A /* CommClient */ = {
+			isa = PBXGroup;
+			children = (
+				3B7E8C5F2A7CED15001F7C1A /* ClientComm.h */,
+				3B7E8C602A7CED15001F7C1A /* ClientComm.mm */,
+				3B7E8C522A7C9466001F7C1A /* STTradeCommProtocol.h */,
+				3B7E8C412A7BA7FD001F7C1A /* MarketDataProtocol.h */,
+				3B7E8C402A7BA7B6001F7C1A /* MarketDataProtocol_CMS.h */,
+				3B7E8C3D2A7BA79F001F7C1A /* ClientSecurityMng.h */,
+				3B7E8C3E2A7BA79F001F7C1A /* ClientSecurityMng.mm */,
+				3B7E8C3A2A7BA76C001F7C1A /* WrapperRSA.h */,
+				3B7E8C3B2A7BA76C001F7C1A /* WrapperRSA.mm */,
+				3B7E8C392A7BA57E001F7C1A /* StandDataType.h */,
+				3B3515F72A7B86F60056D3D1 /* WrapperEVP.h */,
+				3B7E8C372A7B9F46001F7C1A /* WrapperEVP.mm */,
+				3B3515AB2A7B86280056D3D1 /* openssl */,
+				3B7E8C5C2A7CC5F8001F7C1A /* ClientSecurityMngWrapper.h */,
+				3B7E8C5D2A7CC5F8001F7C1A /* ClientSecurityMngWrapper.m */,
+			);
+			path = CommClient;
+			sourceTree = "<group>";
+		};
+		3B8FEBEA27CC5C310044AB8E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				3B8FEBEB27CC5C580044AB8E /* JYBServerManager.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		3B8FEBED27CC612B0044AB8E /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				3B8FEBF127CC631A0044AB8E /* MainServer */,
+				3B8FEBEE27CC613E0044AB8E /* CloudServer */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		3B8FEBEE27CC613E0044AB8E /* CloudServer */ = {
+			isa = PBXGroup;
+			children = (
+				3B8FEBEF27CC61700044AB8E /* CloudServerAPI.swift */,
+				3B8FEBF627CC776C0044AB8E /* CloudServerClient.swift */,
+			);
+			path = CloudServer;
+			sourceTree = "<group>";
+		};
+		3B8FEBF127CC631A0044AB8E /* MainServer */ = {
+			isa = PBXGroup;
+			children = (
+				3B8FEBF227CC632E0044AB8E /* MainServerAPI.swift */,
+				3B8FEBF427CC63BB0044AB8E /* MainServerClient.swift */,
+			);
+			path = MainServer;
+			sourceTree = "<group>";
+		};
 		58CB66CD23B9551800394699 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,9 +503,7 @@
 			isa = PBXGroup;
 			children = (
 				5B7C20C9259DADF9004A5E2D /* TradeClient.swift */,
-				5B92CEBD25ABFC5400605249 /* TradeCommClient.swift */,
-				5B7C169425A2E31B00470E19 /* XMLParse.swift */,
-				5B7C16A125A3138900470E19 /* TradeRequest.swift */,
+				3B8ADFA52AC2ACDF009A45B7 /* TradeResult.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -254,6 +563,7 @@
 				5B80EBA5259C5FF800342C85 /* Resource */,
 				5B80EBA4259C5FED00342C85 /* App */,
 				5B80EB9E259C5F8600342C85 /* Base */,
+				3B8FEBED27CC612B0044AB8E /* Server */,
 				5BBB92CE259C64B80024372B /* Module */,
 			);
 			path = JYB_Swift;
@@ -264,8 +574,11 @@
 			children = (
 				5B80EB9F259C5FB000342C85 /* JYBTabBarViewController.swift */,
 				5BBB92D9259C69F40024372B /* JYBNavigationController.swift */,
+				3B8FEC0027CCB0880044AB8E /* JYBBaseViewController.swift */,
 				5B7C20C1259D60BF004A5E2D /* JYBLayoutButton.swift */,
 				5B7E0AF725AD9BC50006958C /* JYBInsetLabel.swift */,
+				3B8FEBFE27CCAC9A0044AB8E /* JYBNavigationBar.swift */,
+				3B8B525E27CDB7E000D2F089 /* JYBFloatView.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -274,8 +587,11 @@
 			isa = PBXGroup;
 			children = (
 				5B80EB88259C5F3600342C85 /* AppDelegate.swift */,
+				3B8FEBFA27CCA0B70044AB8E /* JYBApplication.swift */,
 				5BBB92DD259C73B40024372B /* Theme.swift */,
 				5B904F80260D71CD00A9795F /* AppManager.swift */,
+				3B8EB77327C8B51600A42DAB /* WelcomeView.swift */,
+				3B8FEBFC27CCA6620044AB8E /* main.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -288,6 +604,7 @@
 				5B80EB8E259C5F3600342C85 /* Main.storyboard */,
 				5B80EB93259C5F3900342C85 /* LaunchScreen.storyboard */,
 				5B7C169A25A3089800470E19 /* test.xml */,
+				3B3515522A7B51010056D3D1 /* JYB_Swift-Bridging-Header.h */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -323,6 +640,7 @@
 			isa = PBXGroup;
 			children = (
 				5B88E04125C9255900621C58 /* JYBUserModel.swift */,
+				3B8FEBF827CC97ED0044AB8E /* UserServicePkgsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,7 +657,6 @@
 		5B88E04725C932BB00621C58 /* CommonView */ = {
 			isa = PBXGroup;
 			children = (
-				5B88E04825C932E600621C58 /* JYBNavigationBar.swift */,
 				5B88E04C25C9330400621C58 /* JYBUserNavigationBar.swift */,
 			);
 			path = CommonView;
@@ -384,6 +701,10 @@
 				5B998C79260C1ECF00DAC08D /* MainServers */,
 				5B9D41D425C25111002C97AE /* NetworkManager.swift */,
 				5B8D3E6A25C1165A00EB328F /* JYBNetworkClient.swift */,
+				3B8EB77727C8DBED00A42DAB /* MainNetworkAPI.swift */,
+				3B8EB77927C8DDF100A42DAB /* MainNetworkClient1.swift */,
+				3B8EB77B27C8E07000A42DAB /* ServerModel.swift */,
+				3B8EB77D27C8E18500A42DAB /* ResponseBaseModel.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -391,8 +712,8 @@
 		5B94FBAD260ADAC100610AAC /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				5B998C84260C26A700DAC08D /* Views */,
 				5B94FBB3260AE51600610AAC /* Models */,
+				5B998C84260C26A700DAC08D /* Views */,
 				5B94FBAE260ADB4400610AAC /* Controllers */,
 			);
 			path = Home;
@@ -403,6 +724,7 @@
 			children = (
 				5B998C80260C232500DAC08D /* HomePageVC.swift */,
 				5B94FBAF260ADB6600610AAC /* HomeAppsVC.swift */,
+				3B8FEC0227CCB29F0044AB8E /* JYBTwoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -454,6 +776,8 @@
 		5BBB92CE259C64B80024372B /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				3B7E8C482A7C7F3A001F7C1A /* CommClient */,
+				3B8FEBEA27CC5C310044AB8E /* Global */,
 				5B94FBAD260ADAC100610AAC /* Home */,
 				5B88E04725C932BB00621C58 /* CommonView */,
 				5B88E03525C8EBA100621C58 /* Login&Register */,
@@ -467,9 +791,11 @@
 		5BBB92CF259C64C70024372B /* Trade */ = {
 			isa = PBXGroup;
 			children = (
+				3B6B3EE52A96E1FC00A91566 /* Model */,
+				3B6B3EE22A96DF8900A91566 /* ViewModel */,
+				3B6B3FDE2A970B0200A91566 /* View */,
+				3B6B3EE62A96E4B200A91566 /* Controller */,
 				5B7C20C8259DADBF004A5E2D /* Network */,
-				5BBB92D0259C66320024372B /* JYBTradeViewController.swift */,
-				5BF34B7C259C7DC700461E29 /* JYBTradeLoginViewController.swift */,
 			);
 			path = Trade;
 			sourceTree = "<group>";
@@ -481,6 +807,8 @@
 				5BBB92D5259C69860024372B /* Extension.swift */,
 				5B7C20C4259D6B6E004A5E2D /* ModuleHeader.swift */,
 				5B7C169725A2E64300470E19 /* Const.swift */,
+				3BBBDACD2A9765DB0016345B /* UIView+Extensions.swift */,
+				3BBBDACF2A9766F70016345B /* Object+ClassName.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -560,6 +888,7 @@
 				TargetAttributes = {
 					5B80EB84259C5F3600342C85 = {
 						CreatedOnToolsVersion = 12.3;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -574,6 +903,8 @@
 				"zh-Hant",
 			);
 			mainGroup = 5B80EB7C259C5F3600342C85;
+			packageReferences = (
+			);
 			productRefGroup = 5B80EB86259C5F3600342C85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -591,6 +922,7 @@
 				5B8D3E6325C0FB3200EB328F /* icon_pull_to_refresh_arrow@2x.png in Resources */,
 				5B80EB95259C5F3900342C85 /* LaunchScreen.storyboard in Resources */,
 				5B8D3E6125C0FB3200EB328F /* Localizable.strings in Resources */,
+				3B6B3FE22A97278500A91566 /* JYBPSG2FAView.xib in Resources */,
 				5B80EB92259C5F3900342C85 /* Assets.xcassets in Resources */,
 				5B80EB90259C5F3600342C85 /* Main.storyboard in Resources */,
 				5B7C169B25A3089800470E19 /* test.xml in Resources */,
@@ -648,23 +980,34 @@
 			files = (
 				5B80EBA0259C5FB000342C85 /* JYBTabBarViewController.swift in Sources */,
 				5B7BD66E25B194F9000F2598 /* JYBSettingItemControl.swift in Sources */,
+				3BBBDAD02A9766F70016345B /* Object+ClassName.swift in Sources */,
+				3B8FEBFD27CCA6620044AB8E /* main.swift in Sources */,
 				5BF34B7D259C7DC700461E29 /* JYBTradeLoginViewController.swift in Sources */,
 				5B8299BD25BFB18600623669 /* JYBPageViewController.swift in Sources */,
+				3B8FEC0127CCB0880044AB8E /* JYBBaseViewController.swift in Sources */,
 				5B88E03A25C8EC0400621C58 /* JYBLoginViewController.swift in Sources */,
 				5B998C8A260C28EB00DAC08D /* HomeAppCell.swift in Sources */,
 				5BBB92D1259C66320024372B /* JYBTradeViewController.swift in Sources */,
+				3BB7A6E32A8A30C100584194 /* ClientComm.mm in Sources */,
 				5B8D3E6225C0FB3200EB328F /* ESRefreshHeaderAnimator.swift in Sources */,
 				5BA3C8DF26521731009DC87B /* JYBLoginViewModel.swift in Sources */,
+				3B7E8C3C2A7BA76C001F7C1A /* WrapperRSA.mm in Sources */,
 				5B8D3E5E25C0FB3200EB328F /* ESPullToRefresh+Manager.swift in Sources */,
+				3B8B525F27CDB7E000D2F089 /* JYBFloatView.swift in Sources */,
 				5B8D3E6B25C1165A00EB328F /* JYBNetworkClient.swift in Sources */,
 				5B7E0AEC25AD826D0006958C /* JYBPersonCenterViewController.swift in Sources */,
-				5B92CEBE25ABFC5400605249 /* TradeCommClient.swift in Sources */,
+				3B7E8C5E2A7CC5F8001F7C1A /* ClientSecurityMngWrapper.m in Sources */,
+				3B6B3FE02A97277A00A91566 /* JYBPSG2FAView.swift in Sources */,
 				5B7C20C5259D6B6E004A5E2D /* ModuleHeader.swift in Sources */,
 				5B88E04225C9255900621C58 /* JYBUserModel.swift in Sources */,
 				5B9D41E825C260C3002C97AE /* JYBNewsModel.swift in Sources */,
-				5B7C169525A2E31B00470E19 /* XMLParse.swift in Sources */,
+				3B8FEBF527CC63BB0044AB8E /* MainServerClient.swift in Sources */,
+				3B6B3EE12A95EF4300A91566 /* LoginModel.swift in Sources */,
+				3B8EB77827C8DBED00A42DAB /* MainNetworkAPI.swift in Sources */,
 				5B8299C625BFB54A00623669 /* TestCViewController.swift in Sources */,
 				5B79544D25AEE175001274C2 /* JYBSettingViewController.swift in Sources */,
+				3B8EB77C27C8E07000A42DAB /* ServerModel.swift in Sources */,
+				3B8FEBF027CC61700044AB8E /* CloudServerAPI.swift in Sources */,
 				5B7C169825A2E64300470E19 /* Const.swift in Sources */,
 				5BE1FC2325B56B80004F077E /* JYBSegmentView.swift in Sources */,
 				5BBB92DA259C69F40024372B /* JYBNavigationController.swift in Sources */,
@@ -672,23 +1015,33 @@
 				5B9D41D525C25112002C97AE /* NetworkManager.swift in Sources */,
 				5B8D3E6625C0FB3200EB328F /* ES.swift in Sources */,
 				5B8D3E6725C0FB3200EB328F /* ESPullToRefresh.swift in Sources */,
+				3B7E8C3F2A7BA79F001F7C1A /* ClientSecurityMng.mm in Sources */,
+				3B8ADFA62AC2ACDF009A45B7 /* TradeResult.swift in Sources */,
 				5B904F81260D71CD00A9795F /* AppManager.swift in Sources */,
-				5B88E04925C932E600621C58 /* JYBNavigationBar.swift in Sources */,
 				5B8299C925C0083D00623669 /* JYBWebViewController.swift in Sources */,
 				5B7E0AF225AD833C0006958C /* ControllerProtocol.swift in Sources */,
+				3BBBDACE2A9765DB0016345B /* UIView+Extensions.swift in Sources */,
 				5B8D3E5F25C0FB3200EB328F /* ESRefreshAnimator.swift in Sources */,
-				5B7C16A225A3138900470E19 /* TradeRequest.swift in Sources */,
+				3B8EB77E27C8E18500A42DAB /* ResponseBaseModel.swift in Sources */,
+				3B8EB77A27C8DDF100A42DAB /* MainNetworkClient1.swift in Sources */,
 				5B79544425AE80ED001274C2 /* JYBCycleScrollView.swift in Sources */,
 				5B88E04525C9285B00621C58 /* JYBLoginClient.swift in Sources */,
 				5B8D3E6525C0FB3200EB328F /* ESRefreshProtocol.swift in Sources */,
+				3B6B3EE42A96DFC800A91566 /* JYBTradeLoginViewModel.swift in Sources */,
 				5B8299C325BFB53800623669 /* TestBViewController.swift in Sources */,
 				5BBB92DE259C73B40024372B /* Theme.swift in Sources */,
+				3B8FEBFB27CCA0B70044AB8E /* JYBApplication.swift in Sources */,
 				5BB5DB2A25C3F3D500300EED /* JYBRefreshManager.swift in Sources */,
 				5BE1FC1E25B565A2004F077E /* JYBNewsViewController.swift in Sources */,
+				3B8FEC0327CCB29F0044AB8E /* JYBTwoViewController.swift in Sources */,
+				3B8FEBF927CC97ED0044AB8E /* UserServicePkgsModel.swift in Sources */,
+				3B8FEBFF27CCAC9A0044AB8E /* JYBNavigationBar.swift in Sources */,
 				5B7E0AF525AD8B830006958C /* JYBLoginOptionViewController.swift in Sources */,
 				5B998D16260CA4F000DAC08D /* HomeAppsBottomView.swift in Sources */,
+				3B7E8C382A7B9F46001F7C1A /* WrapperEVP.mm in Sources */,
 				5B8299C025BFB4E100623669 /* TestAViewController.swift in Sources */,
 				5B80EB89259C5F3600342C85 /* AppDelegate.swift in Sources */,
+				3B8FEBF727CC776C0044AB8E /* CloudServerClient.swift in Sources */,
 				5B7E0AF825AD9BC50006958C /* JYBInsetLabel.swift in Sources */,
 				5B88E04D25C9330400621C58 /* JYBUserNavigationBar.swift in Sources */,
 				5B7C20CA259DADF9004A5E2D /* TradeClient.swift in Sources */,
@@ -696,11 +1049,15 @@
 				5B893F2E25AFD24C00B3F443 /* JYBThemeSettingViewController.swift in Sources */,
 				5B94FBB0260ADB6600610AAC /* HomeAppsVC.swift in Sources */,
 				5B94FBB5260AE53100610AAC /* HomeAppModel.swift in Sources */,
+				3B8FEBF327CC632E0044AB8E /* MainServerAPI.swift in Sources */,
 				5BBB92D6259C69860024372B /* Extension.swift in Sources */,
 				5B998C7B260C1EF600DAC08D /* MainServerNetworkManager.swift in Sources */,
 				5B8D3E4B25C0F44C00EB328F /* JYBNewsChannelViewController.swift in Sources */,
 				5B998C7E260C201300DAC08D /* MainNetworkClient.swift in Sources */,
+				3B8ADFA82AC2C9D7009A45B7 /* TradeUserModel.swift in Sources */,
 				5B8D3E6425C0FB3200EB328F /* ESRefreshFooterAnimator.swift in Sources */,
+				3B8FEBEC27CC5C580044AB8E /* JYBServerManager.swift in Sources */,
+				3B8EB77427C8B51600A42DAB /* WelcomeView.swift in Sources */,
 				5BB5DB2625C3EE5300300EED /* JYBRefreshHeaderAnimator.swift in Sources */,
 				5B7C20C2259D60BF004A5E2D /* JYBLayoutButton.swift in Sources */,
 				5B8D3E6025C0FB3200EB328F /* ESRefreshComponent.swift in Sources */,
@@ -778,6 +1135,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -840,6 +1198,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -864,16 +1223,45 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HQ3E92U25;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/FLEX/FLEX.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON/HandyJSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya/Moya.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper/ObjectMapper.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift/ReactiveSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa/RxCocoa.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyRSA/SwiftyRSA.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/XMLMapper/XMLMapper.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/libwebp/libwebp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
+					"\"$(SRCROOT)/JYB_Swift/Module/CommClient\"",
+				);
 				INFOPLIST_FILE = JYB_Swift/Resource/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/JYB_Swift/Module/CommClient/openssl\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tradego.JYB-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JYB_Swift/Resource/JYB_Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -885,16 +1273,43 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2HQ3E92U25;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire/Alamofire.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/HandyJSON/HandyJSON.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Kingfisher/Kingfisher.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/Moya/Moya.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ObjectMapper/ObjectMapper.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveCocoa/ReactiveCocoa.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/ReactiveSwift/ReactiveSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxCocoa/RxCocoa.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxRelay/RxRelay.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/RxSwift/RxSwift.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SnapKit/SnapKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/SwiftyRSA/SwiftyRSA.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/XMLCoder/XMLCoder.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/YYKit/YYKit.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/libwebp/libwebp.framework/Headers\"",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/lottie-ios/Lottie.framework/Headers\"",
+					"\"$(SRCROOT)/JYB_Swift/Module/CommClient\"",
+				);
 				INFOPLIST_FILE = JYB_Swift/Resource/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/JYB_Swift/Module/CommClient/openssl\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tradego.JYB-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JYB_Swift/Resource/JYB_Swift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

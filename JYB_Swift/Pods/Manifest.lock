@@ -1,8 +1,22 @@
 PODS:
   - Alamofire (5.4.1)
   - CocoaAsyncSocket (7.6.5)
+  - FLEX (4.6.1)
   - HandyJSON (5.0.2)
   - Kingfisher (6.2.1)
+  - libwebp (1.3.1):
+    - libwebp/demux (= 1.3.1)
+    - libwebp/mux (= 1.3.1)
+    - libwebp/sharpyuv (= 1.3.1)
+    - libwebp/webp (= 1.3.1)
+  - libwebp/demux (1.3.1):
+    - libwebp/webp
+  - libwebp/mux (1.3.1):
+    - libwebp/demux
+  - libwebp/sharpyuv (1.3.1)
+  - libwebp/webp (1.3.1):
+    - libwebp/sharpyuv
+  - lottie-ios (3.2.3)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
   - Moya/Core (14.0.0):
@@ -10,67 +24,94 @@ PODS:
   - ObjectMapper (4.2.0)
   - ReactiveCocoa (10.3.0):
     - ReactiveSwift (~> 6.2)
-  - ReactiveSwift (6.6.0)
-  - RxCocoa (6.0.0-rc.2):
-    - RxRelay (= 6.0.0-rc.2)
-    - RxSwift (= 6.0.0-rc.2)
-  - RxRelay (6.0.0-rc.2):
-    - RxSwift (= 6.0.0-rc.2)
-  - RxSwift (6.0.0-rc.2)
+  - ReactiveSwift (6.7.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
   - SnapKit (5.0.1)
-  - XMLMapper (2.0.0):
-    - XMLMapper/Core (= 2.0.0)
-  - XMLMapper/Core (2.0.0)
+  - SwiftEntryKit (2.0.0)
+  - SwiftyRSA (1.7.0):
+    - SwiftyRSA/ObjC (= 1.7.0)
+  - SwiftyRSA/ObjC (1.7.0)
+  - XMLCoder (0.14.0)
   - YYKit (1.0.9):
+    - libwebp
     - YYKit/no-arc (= 1.0.9)
-  - YYKit/no-arc (1.0.9)
+  - YYKit/no-arc (1.0.9):
+    - libwebp
 
 DEPENDENCIES:
   - CocoaAsyncSocket
+  - FLEX
   - HandyJSON (~> 5.0.2)
   - Kingfisher
+  - lottie-ios
   - Moya (~> 14.0)
   - ObjectMapper
   - ReactiveCocoa (~> 10.1)
-  - RxCocoa (= 6.0.0-rc.2)
-  - RxSwift (= 6.0.0-rc.2)
+  - RxCocoa (= 6.5.0)
+  - RxSwift (= 6.5.0)
   - SnapKit (~> 5.0.0)
-  - XMLMapper
-  - YYKit
+  - SwiftEntryKit (= 2.0.0)
+  - SwiftyRSA
+  - XMLCoder (~> 0.14.0)
+  - YYKit (from `https://github.com/SAGESSE-CN/YYKit.git`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
-    - Alamofire
-    - CocoaAsyncSocket
-    - HandyJSON
-    - Kingfisher
-    - Moya
-    - ObjectMapper
+  https://github.com/CocoaPods/Specs:
     - ReactiveCocoa
     - ReactiveSwift
     - RxCocoa
     - RxRelay
     - RxSwift
+    - SwiftEntryKit
+  trunk:
+    - Alamofire
+    - CocoaAsyncSocket
+    - FLEX
+    - HandyJSON
+    - Kingfisher
+    - libwebp
+    - lottie-ios
+    - Moya
+    - ObjectMapper
     - SnapKit
-    - XMLMapper
-    - YYKit
+    - SwiftyRSA
+    - XMLCoder
+
+EXTERNAL SOURCES:
+  YYKit:
+    :git: https://github.com/SAGESSE-CN/YYKit.git
+
+CHECKOUT OPTIONS:
+  YYKit:
+    :commit: 903d9e3c5a20089f152918fe8611fcafd52c2ad1
+    :git: https://github.com/SAGESSE-CN/YYKit.git
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
+  FLEX: bbc55d197f87d7cde2454c3981aa47069b694144
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
+  libwebp: 33dc822fbbf4503668d09f7885bbfedc76c45e96
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
   ReactiveCocoa: 083ae559e6f588ce519cab412ea119b431c26a24
-  ReactiveSwift: be9407e2aaf8a11e53a5229255693cffd9a63ccf
-  RxCocoa: 38445a25751be5907f52f7ea02c137f52ce2e7f2
-  RxRelay: b9e2483e83f46e4e7bf1234c6fe418e5c2eaf825
-  RxSwift: ada35be6643bedf6881cdbd6bbfb27aeea527670
+  ReactiveSwift: 208201d6ecc9734196d147aa76bc1f24b1b821fe
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
-  XMLMapper: 45ff16367092620b0b4adbc5e42dd8db6ebb5e0d
-  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
+  SwiftyRSA: 8c6dd1ea7db1b8dc4fb517a202f88bb1354bc2c6
+  XMLCoder: 0199b725702f32aa3190a88ea2f6fb4847bfe1d1
+  YYKit: 9ac092a14e3d5af709b707479bdb76b96a62fb41
 
-PODFILE CHECKSUM: 13776864de6dc819b79f30c5af97782c266a04ed
+PODFILE CHECKSUM: 03ea883bb1e13dba8278acb22018ebbec27d754e
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3
